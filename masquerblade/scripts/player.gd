@@ -18,6 +18,7 @@ func _ready():
 			move_to_boss_target()
 
 func move_to_initial_target():
+	MusicManager.set_state("moving")
 	var tween = create_tween()
 	# Interpolate global_position from current value to target over 1.0 seconds
 	tween.tween_property(self, "global_position", target_node_1.global_position, 1.0)\
@@ -27,15 +28,17 @@ func move_to_initial_target():
 
 func _on_reached_location_1():
 	print("Character arrived! Starting first dance...")
-	
+
 	# Load your minigame scene or toggle UI here
 	GameEvents.request_2d_change.emit("RhythmGameComplete", true)
+	MusicManager.set_state("destination")
 
 func _first_dance_success():
 	GameEvents.game_state = 1
 	move_to_secondary_target()
 	
 func move_to_secondary_target():
+	MusicManager.set_state("moving")
 	var tween = create_tween()
 	# Interpolate global_position from current value to target over 1.0 seconds
 	tween.tween_property(self, "global_position", target_node_2.global_position, 1.0)\
@@ -48,12 +51,14 @@ func _on_reached_location_2():
 	
 	# Load your minigame scene or toggle UI here
 	GameEvents.request_2d_change.emit("RhythmGameComplete", true)
+	MusicManager.set_state("destination")
 
 func _second_dance_success():
 	GameEvents.game_state = 2
 	move_to_boss_target()
 	
 func move_to_boss_target():
+	MusicManager.set_state("moving")
 	var tween = create_tween()
 	# Interpolate global_position from current value to target over 1.0 seconds
 	tween.tween_property(self, "global_position", target_node_3.global_position, 1.0)\
@@ -66,3 +71,4 @@ func _on_reached_location_3():
 	
 	# Load your minigame scene or toggle UI here
 	GameEvents.request_2d_change.emit("RhythmGameComplete", true)
+	MusicManager.set_state("destination")

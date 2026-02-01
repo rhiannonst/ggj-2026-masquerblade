@@ -10,7 +10,7 @@ config_version=5
 
 [Fmod]
 
-General/banks_path="res://fmodproject/masquerbladefmod"
+General/banks_path="res://fmodproject/masquerbladefmod/Build/Desktop/"
 
 [application]
 
@@ -22,6 +22,7 @@ config/icon="res://icon.svg"
 [autoload]
 
 GameEvents="*uid://dqp8hqsos4riw"
+MusicManager="*uid://bxt3ymvdqjm0m"
 
 [display]
 
