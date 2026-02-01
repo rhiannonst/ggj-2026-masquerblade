@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://bvp0vbnlw5s3s"]
+
+[ext_resource type="Script" uid="uid://durhqnoag57ja" path="res://scripts/Rythm Game/NoteSpawner.gd" id="1_4fxwq"]
+
+[node name="NoteSpawner" type="Node2D" unique_id=1329407926]
+position = Vector2(300, 330)
+script = ExtResource("1_4fxwq")
