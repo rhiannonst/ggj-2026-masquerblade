@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://cuqype36giogg"]
+
+[ext_resource type="Texture2D" uid="uid://b4y8ni7tf0rme" path="res://assets/sprites/Room_Placeholder.png" id="1_40fcl"]
+[ext_resource type="PackedScene" uid="uid://5egujfrgey0" path="res://scenes/Player.tscn" id="2_sah0u"]
+[ext_resource type="Script" uid="uid://beb8dae4sh6bn" path="res://scripts/player.gd" id="3_hbxgx"]
+[ext_resource type="Texture2D" uid="uid://5cmjrh8d0t4h" path="res://assets/sprites/Enemy_Placeholder.png" id="4_7atef"]
+
+[node name="DanceFloor" type="Node2D" unique_id=281077450]
+
+[node name="Floor" type="Sprite2D" parent="." unique_id=1662584009]
+scale = Vector2(20, 20)
+texture = ExtResource("1_40fcl")
+
+[node name="Player" parent="." unique_id=54703463 instance=ExtResource("2_sah0u")]
+position = Vector2(-1506, 168)
+script = ExtResource("3_hbxgx")
+
+[node name="EnemyLocation1" type="Node2D" parent="." unique_id=90284962]
+position = Vector2(-639, -16)
+
+[node name="Enemy" type="Sprite2D" parent="." unique_id=1359457141]
+position = Vector2(-623, -584)
+texture = ExtResource("4_7atef")
+
+[node name="EnemyLocation2" type="Node2D" parent="." unique_id=769301874]
+position = Vector2(6, 6)
+
+[node name="Enemy2" type="Sprite2D" parent="." unique_id=75621650]
+position = Vector2(6, 656)
+texture = ExtResource("4_7atef")
+
+[node name="BossLocation" type="Node2D" parent="." unique_id=1602516384]
+position = Vector2(872.5, 6)
+
+[node name="Boss" type="Sprite2D" parent="." unique_id=95493721]
+position = Vector2(883.5, 0)
+texture = ExtResource("4_7atef")

@@ -1,0 +1,38 @@
+[gd_scene format=3 uid="uid://d36rboba6oq4h"]
+
+[ext_resource type="Script" uid="uid://xs3227oaq4wd" path="res://scripts/ui/control_screen.gd" id="1_68bic"]
+[ext_resource type="Texture2D" uid="uid://btn4ss8icu46" path="res://assets/sprites/titlescreen.png" id="2_mv0by"]
+
+[node name="ControlScreen" type="Control" unique_id=1076347]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_68bic")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=231329431]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("2_mv0by")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=2090624937]
+layout_mode = 0
+offset_left = 283.0
+offset_top = 316.0
+offset_right = 356.0
+offset_bottom = 363.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 10
+
+[node name="back" type="Button" parent="VBoxContainer" unique_id=1498110848]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+theme_override_font_sizes/font_size = 28
+text = "Back"
+
+[connection signal="pressed" from="VBoxContainer/back" to="." method="_on_back_pressed"]
