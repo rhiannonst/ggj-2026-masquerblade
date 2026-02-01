@@ -7,7 +7,7 @@ var lane = 0
 func initialize(incoming_lane):
 	lane = incoming_lane
 	# Position notes horizontally based on lane
-	position.x = (lane - 1.5) * 100
+	position.x = (lane - 1.5) * 150
 	position.y = 0 
 	$AnimatedSprite2D.frame = lane
 
