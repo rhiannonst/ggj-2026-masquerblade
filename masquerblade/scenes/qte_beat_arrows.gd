@@ -8,8 +8,11 @@ extends Node2D
 @onready var startSafe: Marker2D = $safeStartPos
 @onready var endSafe: Marker2D = $safeEndPos
 
-#gets the related enemy or player node too for dealing "mask off dmg" to their "hp"
+#gets the related enemy and player node too for dealing "mask off dmg" to their "hp"
+#TODO: replace with actual player/enemy references
 @onready var enemy: CharacterBody2D = $"../enemy"
+@onready var player: CharacterBody2D = $"../player"
+
 
 #direction of movement for falling arrows.
 var direction = 1 # down!
@@ -28,6 +31,7 @@ func _process(delta: float)->void:
 			#enemy.hurt()
 			print("you've successfully clicked in the hit zone !")
 		else:
+			#player.hurt()
 			print("you've critically missed the beat")
 
 # Called when the node enters the scene tree for the first time.

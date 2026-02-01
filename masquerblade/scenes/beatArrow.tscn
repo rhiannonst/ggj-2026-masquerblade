@@ -13,6 +13,8 @@
 
 [node name="enemy" type="CharacterBody2D" parent="CanvasLayer" unique_id=711576050]
 
+[node name="player" type="CharacterBody2D" parent="CanvasLayer" unique_id=1661230801]
+
 [node name="QTE_beatArrows" type="Node2D" parent="." unique_id=921031533]
 script = ExtResource("1_j7hl7")
 
