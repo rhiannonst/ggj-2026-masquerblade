@@ -1,8 +1,9 @@
 [gd_scene format=3 uid="uid://c3rlpndabmpjh"]
 
 [ext_resource type="Script" uid="uid://6rqfbcp2p5fe" path="res://scripts/rhythm_game_complete.gd" id="1_il8wb"]
-[ext_resource type="Texture2D" uid="uid://dmffge5gxfl4k" path="res://assets/sprites/ui battle pink background.png" id="2_y7fpt"]
+[ext_resource type="Texture2D" uid="uid://djapu70adnjv1" path="res://Art/UI/ui battle purple background.png" id="2_il8wb"]
 [ext_resource type="Texture2D" uid="uid://bvoe0qhpn2fnn" path="res://assets/sprites/PeacockPamela_Idle.png" id="3_il8wb"]
+[ext_resource type="Texture2D" uid="uid://bfhciihqu0qu4" path="res://Art/UI/ui battle animation spiral for purple background 2.png" id="3_y7fpt"]
 [ext_resource type="Script" uid="uid://e3try20daxec" path="res://scripts/dance_enemy.gd" id="4_4utk3"]
 [ext_resource type="Texture2D" uid="uid://bxb6lej1icxg8" path="res://assets/sprites/player.png" id="5_ls0id"]
 [ext_resource type="Script" uid="uid://bu70rir2mn5mk" path="res://scripts/dance_player.gd" id="6_ewo3l"]
@@ -133,7 +134,12 @@ script = ExtResource("1_il8wb")
 [node name="TextureRect" type="TextureRect" parent="." unique_id=1368027572]
 offset_right = 711.0
 offset_bottom = 799.875
-texture = ExtResource("2_y7fpt")
+texture = ExtResource("2_il8wb")
+
+[node name="TextureRect2" type="TextureRect" parent="." unique_id=683412740]
+offset_right = 710.0
+offset_bottom = 801.0
+texture = ExtResource("3_y7fpt")
 
 [node name="Enemy" type="AnimatedSprite2D" parent="." unique_id=1391071958]
 position = Vector2(633, 424)
