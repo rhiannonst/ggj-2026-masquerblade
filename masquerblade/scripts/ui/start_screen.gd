@@ -19,6 +19,7 @@ func _on_start_pressed() -> void:
 func _on_controls_pressed() -> void:
 	print("controls")
 	#Global.game_controller.change_ui_scene("controlScreen")
+	GameEvents.request_ui_change.emit("controlScreen", false)
 
 
 func _on_quit_pressed() -> void:
