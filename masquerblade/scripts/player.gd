@@ -4,12 +4,18 @@ extends CharacterBody2D
 @onready var target_node_2: Node2D = $"../EnemyLocation2"
 @onready var target_node_3: Node2D = $"../BossLocation"
 
-
-var game_state = 0
-
 func _ready():
-	if game_state == 0:
-		move_to_initial_target()
+	match GameEvents.current_game_state:
+		0:
+			move_to_initial_target()
+		1:
+			# Teleport to Location 1 first, then move to 2
+			global_position = target_node_1.global_position
+			move_to_secondary_target()
+		2:
+			# Teleport to Location 2 first, then move to Boss
+			global_position = target_node_2.global_position
+			move_to_boss_target()
 
 func move_to_initial_target():
 	var tween = create_tween()
@@ -23,10 +29,10 @@ func _on_reached_location_1():
 	print("Character arrived! Starting first dance...")
 	
 	# Load your minigame scene or toggle UI here
-	#start_minigame_logic()
+	GameEvents.request_2d_change.emit("RhythmGameComplete", true)
 
 func _first_dance_success():
-	game_state = 1
+	GameEvents.game_state = 1
 	move_to_secondary_target()
 	
 func move_to_secondary_target():
@@ -41,10 +47,10 @@ func _on_reached_location_2():
 	print("Character arrived! Starting second dance...")
 	
 	# Load your minigame scene or toggle UI here
-	#start_minigame_logic()
+	GameEvents.request_2d_change.emit("RhythmGameComplete", true)
 
 func _second_dance_success():
-	game_state = 2
+	GameEvents.game_state = 2
 	move_to_boss_target()
 	
 func move_to_boss_target():
@@ -59,4 +65,4 @@ func _on_reached_location_3():
 	print("Character arrived! Starting boss dance...")
 	
 	# Load your minigame scene or toggle UI here
-	#start_minigame_logic()
+	GameEvents.request_2d_change.emit("RhythmGameComplete", true)

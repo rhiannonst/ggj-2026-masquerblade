@@ -1,0 +1,46 @@
+[gd_scene format=3 uid="uid://bvmlrwnmvxnoq"]
+
+[ext_resource type="Script" uid="uid://btprps43jsb60" path="res://scenes/Rythm Game/note_button.gd" id="1_wea8h"]
+[ext_resource type="Texture2D" uid="uid://bhlut2axntos5" path="res://assets/sprites/arrows bicolor.png" id="2_8xbfg"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dx7bo"]
+atlas = ExtResource("2_8xbfg")
+region = Rect2(150, 0, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j018v"]
+atlas = ExtResource("2_8xbfg")
+region = Rect2(750, 0, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_myg6i"]
+atlas = ExtResource("2_8xbfg")
+region = Rect2(450, 0, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sajkm"]
+atlas = ExtResource("2_8xbfg")
+region = Rect2(1050, 0, 150, 150)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_k3c3b"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dx7bo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j018v")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_myg6i")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sajkm")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="NoteButton" type="Area2D" unique_id=170260707]
+script = ExtResource("1_wea8h")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1827625845]
+sprite_frames = SubResource("SpriteFrames_k3c3b")

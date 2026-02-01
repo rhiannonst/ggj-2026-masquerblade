@@ -12,12 +12,14 @@ func _process(delta: float) -> void:
 
 func _on_start_pressed() -> void:
 	print("Start")
-	Global.game_controller.change_2d_scene("DanceFloor")
+	#Global.game_controller.change_2d_scene("DanceFloor")
+	GameEvents.request_2d_change.emit("DanceFloor", true)
 
 
 func _on_controls_pressed() -> void:
 	print("controls")
-	Global.game_controller.change_ui_scene("controlScreen")
+	#Global.game_controller.change_ui_scene("controlScreen")
+	GameEvents.request_ui_change.emit("controlScreen", false)
 
 
 func _on_quit_pressed() -> void:
