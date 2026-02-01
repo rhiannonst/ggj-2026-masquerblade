@@ -22,8 +22,10 @@ func _unhandled_input(event: InputEvent) -> void:
 
 func _on_main_menu_pressed() -> void:
 	get_tree().paused = false
-	Global.game_controller.clear_world_2d()
-	Global.game_controller.change_ui_scene("startScreen", true)
+	#Global.game_controller.clear_world_2d()
+	#Global.game_controller.change_ui_scene("startScreen", true)
+	GameEvents.request_world_2d_clear.emit()
+	GameEvents.request_ui_change.emit("startScreen", true)
 
 func _on_quit_pressed() -> void:
 	get_tree().quit()

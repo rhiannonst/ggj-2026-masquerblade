@@ -13,4 +13,5 @@ func _process(delta: float) -> void:
 
 func _on_back_pressed() -> void:
 	print("controls")
-	Global.game_controller.change_ui_scene("startScreen")
+	#Global.game_controller.change_ui_scene("startScreen")
+	GameEvents.request_ui_change.emit("startScreen", true)
