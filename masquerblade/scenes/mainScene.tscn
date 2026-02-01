@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://dtkn21x6vy77x" path="res://scripts/gameController/GameController.gd" id="1_ki6c0"]
 [ext_resource type="PackedScene" uid="uid://ce55i66bmts2" path="res://scenes/ui/startScreen.tscn" id="2_8ifl6"]
+[ext_resource type="AudioStream" uid="uid://smqfclu5cws7" path="res://fmodproject/masquerbladefmod/Assets/Masquerblade - Full Song.wav" id="3_twn0q"]
 
 [node name="GameController" type="Node" unique_id=818782911 node_paths=PackedStringArray("world_3d", "world_2d", "gui")]
 script = ExtResource("1_ki6c0")
@@ -26,3 +27,6 @@ grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
 color = Color(0, 0, 0, 1)
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1704662015]
+stream = ExtResource("3_twn0q")
