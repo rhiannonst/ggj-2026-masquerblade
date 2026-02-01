@@ -15,17 +15,18 @@ General/banks_path="res://fmodproject/masquerbladefmod"
 [application]
 
 config/name="Masquerblade"
+run/main_scene="uid://bemkgw1fmbkwv"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
+
+[autoload]
+
+Global="*uid://c8i1qokx384ug"
 
 [display]
 
 window/size/viewport_width=640
-window/size/viewport_height=720
-
-[editor_plugins]
-
-enabled=PackedStringArray("res://addons/fmod/plugin.cfg")
+window/size/viewport_height=680
 
 [physics]
 
