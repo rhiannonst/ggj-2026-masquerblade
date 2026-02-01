@@ -38,7 +38,8 @@ func change_2d_scene(scene_name: String, delete: bool = true, keep_running: bool
 		elif keep_running:
 			current_2d_scene.visible = false
 		else:
-			gui.remove_child(current_2d_scene)
+			#gui.remove_child(current_2d_scene)
+			world_2d.remove_child(current_2d_scene)
 	if hide_gui and current_gui_scene != null:
 		current_gui_scene.queue_free()
 		current_gui_scene = null
@@ -58,7 +59,8 @@ func change_3d_scene(scene_name: String, delete: bool = true, keep_running: bool
 		elif keep_running:
 			current_3d_scene.visible = false
 		else:
-			gui.remove_child(current_3d_scene)
+			#gui.remove_child(current_3d_scene)
+			world_3d.remove_child(current_3d_scene)
 	var new = load(game_path).instantiate()
 	world_3d.add_child(new)
 	current_3d_scene = new
