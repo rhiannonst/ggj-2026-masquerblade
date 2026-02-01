@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b4y8ni7tf0rme"
-path="res://.godot/imported/Room_Placeholder.png-09384a26fddb549dd31827a000b19776.ctex"
+uid="uid://btn4ss8icu46"
+path="res://.godot/imported/titlescreen.png-1d2fd78216532def96e19aea0264a7cd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Room_Placeholder.png"
-dest_files=["res://.godot/imported/Room_Placeholder.png-09384a26fddb549dd31827a000b19776.ctex"]
+source_file="res://assets/sprites/titlescreen.png"
+dest_files=["res://.godot/imported/titlescreen.png-1d2fd78216532def96e19aea0264a7cd.ctex"]
 
 [params]
 

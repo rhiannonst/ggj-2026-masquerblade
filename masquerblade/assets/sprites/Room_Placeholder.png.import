@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://5cmjrh8d0t4h"
-path="res://.godot/imported/Enemy_Placeholder.png-8a61d0aacd431be36cf07923d4e8613c.ctex"
+uid="uid://b4y8ni7tf0rme"
+path="res://.godot/imported/Room_Placeholder.png-a27d77ad9353a670a164e9f24310f4d2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Enemy_Placeholder.png"
-dest_files=["res://.godot/imported/Enemy_Placeholder.png-8a61d0aacd431be36cf07923d4e8613c.ctex"]
+source_file="res://assets/sprites/Room_Placeholder.png"
+dest_files=["res://.godot/imported/Room_Placeholder.png-a27d77ad9353a670a164e9f24310f4d2.ctex"]
 
 [params]
 

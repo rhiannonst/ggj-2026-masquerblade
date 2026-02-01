@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bfgg0wuycophf"
-path="res://.godot/imported/Player_Placeholder.png-e28ece5e14a276687053c2ce1f2d69bd.ctex"
+uid="uid://dpdpf6urfuw0q"
+path="res://.godot/imported/spritesheet1.png-e3d1d8a5d71ae0c7aa619d300c847ced.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Player_Placeholder.png"
-dest_files=["res://.godot/imported/Player_Placeholder.png-e28ece5e14a276687053c2ce1f2d69bd.ctex"]
+source_file="res://assets/sprites/spritesheet1.png"
+dest_files=["res://.godot/imported/spritesheet1.png-e3d1d8a5d71ae0c7aa619d300c847ced.ctex"]
 
 [params]
 
