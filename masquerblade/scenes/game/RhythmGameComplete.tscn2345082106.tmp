@@ -5,7 +5,6 @@
 [ext_resource type="Script" uid="uid://bu70rir2mn5mk" path="res://scripts/dance_player.gd" id="3_ydrio"]
 [ext_resource type="Script" uid="uid://x1ssjeeniekj" path="res://scripts/RhythmController.gd" id="4_nc34d"]
 [ext_resource type="PackedScene" uid="uid://bvp0vbnlw5s3s" path="res://scenes/Rythm Game/NoteSpawner.tscn" id="5_klh5i"]
-[ext_resource type="Script" uid="uid://b2b5ryrlej7s5" path="res://scripts/Rythm Game/note_button_spawner.gd" id="6_wmshs"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_tdnyv"]
 atlas = ExtResource("1_ppdf6")
@@ -410,7 +409,3 @@ position = Vector2(0, 600)
 scale = Vector2(18.36, 5.9599986)
 shape = SubResource("RectangleShape2D_gx64x")
 debug_color = Color(0, 0.6, 0.69803923, 0.68235296)
-
-[node name="NoteButtonSpawner" type="Node2D" parent="RhythmController" unique_id=201372151]
-position = Vector2(0, 602)
-script = ExtResource("6_wmshs")
