@@ -1,7 +1,26 @@
 [gd_scene format=3 uid="uid://bfjhjhb8aej7b"]
 
-[node name="BeatArrow" type="Node2D" unique_id=794096848]
+[ext_resource type="Texture2D" uid="uid://b4y8ni7tf0rme" path="res://Room_Placeholder.png" id="1_kihy8"]
+
+[node name="game" type="Node2D" unique_id=1360802660]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1864330040]
+
+[node name="Camera2D" type="Camera2D" parent="CanvasLayer" unique_id=365702633]
 
 [node name="QTE_beatArrows" type="Node2D" parent="." unique_id=921031533]
 
-[node name="bkgrnd_fight" type="Sprite2D" parent="QTE_beatArrows" unique_id=71009815]
+[node name="arrowKeyMatch" type="Sprite2D" parent="QTE_beatArrows" unique_id=71009815]
+position = Vector2(-7.6293945e-06, 100.25001)
+scale = Vector2(0.8172805, 0.19594598)
+texture = ExtResource("1_kihy8")
+
+[node name="pointer" type="Sprite2D" parent="QTE_beatArrows" unique_id=1261637886]
+
+[node name="start" type="Marker2D" parent="QTE_beatArrows/pointer" unique_id=2045512368]
+
+[node name="end" type="Marker2D" parent="QTE_beatArrows/pointer" unique_id=1412401086]
+
+[node name="safeStartPos" type="Marker2D" parent="QTE_beatArrows/pointer" unique_id=1293814175]
+
+[node name="safeEndPos" type="Marker2D" parent="QTE_beatArrows/pointer" unique_id=981483435]
