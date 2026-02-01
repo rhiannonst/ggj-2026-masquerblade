@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://bemkgw1fmbkwv"]
 
-[ext_resource type="Script" uid="uid://dtkn21x6vy77x" path="res://scripts/gameController/GameController.gd" id="1_ki6c0"]
+[ext_resource type="Script" uid="uid://dtkn21x6vy77x" path="res://scripts/GameController/GameController.gd" id="1_ki6c0"]
 [ext_resource type="PackedScene" uid="uid://ce55i66bmts2" path="res://scenes/ui/startScreen.tscn" id="2_8ifl6"]
 
 [node name="GameController" type="Node" unique_id=818782911 node_paths=PackedStringArray("world_3d", "world_2d", "gui")]
