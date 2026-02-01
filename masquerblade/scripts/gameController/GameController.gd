@@ -28,6 +28,7 @@ func change_ui_scene(scene_name: String, delete: bool = true, keep_running: bool
 	current_gui_scene = new
 
 func change_2d_scene(scene_name: String, delete: bool = true, keep_running: bool = false, hide_gui: bool = true) -> void:
+	get_tree().paused = false
 	var game_path := GAME_SCENE_PATH + scene_name + ".tscn"
 	if not ResourceLoader.exists(game_path):
 		push_error("UI scene not found: " + game_path)
