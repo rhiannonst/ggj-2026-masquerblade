@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://bfjhjhb8aej7b"]
 
+[ext_resource type="Script" uid="uid://cd5421447oupy" path="res://scenes/qte_beat_arrows.gd" id="1_j7hl7"]
 [ext_resource type="Texture2D" uid="uid://b4y8ni7tf0rme" path="res://Room_Placeholder.png" id="1_kihy8"]
 
 [sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_kihy8"]
@@ -10,22 +11,38 @@
 
 [node name="Camera2D" type="Camera2D" parent="CanvasLayer" unique_id=365702633]
 
+[node name="enemy" type="CharacterBody2D" parent="CanvasLayer" unique_id=711576050]
+
 [node name="QTE_beatArrows" type="Node2D" parent="." unique_id=921031533]
+script = ExtResource("1_j7hl7")
 
 [node name="arrowKeyMatch" type="Sprite2D" parent="QTE_beatArrows" unique_id=71009815]
-position = Vector2(-7.6293945e-06, 100.25001)
-scale = Vector2(0.8172805, 0.19594598)
+position = Vector2(0, 95.99999)
+scale = Vector2(0.8172805, 0.20608108)
 texture = ExtResource("1_kihy8")
 
 [node name="pointer" type="Sprite2D" parent="QTE_beatArrows" unique_id=1261637886]
-position = Vector2(-154.125, 48)
-scale = Vector2(20.25, 56.5)
+position = Vector2(-3.8146973e-06, 0)
+rotation = -4.719119
+scale = Vector2(31.386168, 94.05094)
 texture = SubResource("PlaceholderTexture2D_kihy8")
 
-[node name="start" type="Marker2D" parent="QTE_beatArrows/pointer" unique_id=2045512368]
+[node name="start" type="Marker2D" parent="QTE_beatArrows" unique_id=2045512368]
+position = Vector2(-1.4901161e-08, 24)
+rotation = 1.5640663
+scale = Vector2(31.386168, 94.05094)
 
-[node name="end" type="Marker2D" parent="QTE_beatArrows/pointer" unique_id=1412401086]
+[node name="end" type="Marker2D" parent="QTE_beatArrows" unique_id=1412401086]
+position = Vector2(1.1920929e-07, 168)
+rotation = 1.5640663
+scale = Vector2(31.386168, 94.05094)
 
-[node name="safeStartPos" type="Marker2D" parent="QTE_beatArrows/pointer" unique_id=1293814175]
+[node name="safeStartPos" type="Marker2D" parent="QTE_beatArrows" unique_id=1293814175]
+position = Vector2(-7.1525574e-07, 64)
+rotation = 1.5640663
+scale = Vector2(31.386168, 94.05094)
 
-[node name="safeEndPos" type="Marker2D" parent="QTE_beatArrows/pointer" unique_id=981483435]
+[node name="safeEndPos" type="Marker2D" parent="QTE_beatArrows" unique_id=981483435]
+position = Vector2(7.8082085e-06, 120)
+rotation = 1.5640663
+scale = Vector2(31.386168, 94.05094)
