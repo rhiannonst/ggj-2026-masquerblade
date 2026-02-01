@@ -1,16 +1,21 @@
 extends Area2D
-var speed = 100
-func initialize(lane):
-	print("note spawned")
-	position.x += lane*150
+class_name note
+var speed = 600 # Adjusted for better feel
+var lane = 0
+
+
+func initialize(incoming_lane):
+	lane = incoming_lane
+	# Position notes horizontally based on lane
+	position.x = (lane - 1.5) * 100
+	position.y = 0 
 	$AnimatedSprite2D.frame = lane
-	pass
-# Called when the node enters the scene tree for the first time.
-func _ready() -> void:
-	pass # Replace with function body.
 
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	position.y -= speed * delta
+	# Move UP toward the target (or DOWN, depending on your UI)
+	position.y += speed * delta
 	
+	# Auto-delete if it goes off screen to save memory
+	if position.y > 750:
+		queue_free()
+ 

@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://cc751eixujesp"]
+[gd_scene format=3 uid="uid://cgbbcxbk6fnw8"]
 
 [ext_resource type="Script" uid="uid://dj7ynuf0gml75" path="res://scripts/Rythm Game/note.gd" id="1_0lujy"]
 [ext_resource type="Texture2D" uid="uid://dyfqrknya0dbd" path="res://assets/sprites/falling note 150x150 placeholder.png" id="2_he6nt"]

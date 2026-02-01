@@ -1,11 +1,10 @@
-[gd_scene format=3 uid="uid://b3obc3n0elsf1"]
+[gd_scene format=3 uid="uid://dnktulsa65qy5"]
 
-[ext_resource type="Script" uid="uid://wdlvpwdhsffe" path="res://scenes/Rythm Game/rythm_game.gd" id="1_gdajx"]
-[ext_resource type="PackedScene" uid="uid://bvp0vbnlw5s3s" path="res://scenes/Rythm Game/NoteSpawner.tscn" id="1_xbrfm"]
+[ext_resource type="Script" path="res://scenes/Rythm Game/rythm_game.gd" id="1_gdajx"]
+[ext_resource type="PackedScene" path="res://scenes/Rythm Game/NoteSpawner.tscn" id="1_xbrfm"]
 
 [node name="RythmGame" type="Node2D" unique_id=1051830153]
 script = ExtResource("1_gdajx")
 
 [node name="NoteSpawner" parent="." unique_id=1329407926 instance=ExtResource("1_xbrfm")]
 position = Vector2(43, 338)
-bpm = 120.0
