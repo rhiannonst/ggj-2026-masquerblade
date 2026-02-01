@@ -27,7 +27,7 @@ func change_ui_scene(scene_name: String, delete: bool = true, keep_running: bool
 	gui.add_child(new)
 	current_gui_scene = new
 
-func change_2d_scene(scene_name: String, delete: bool = true, keep_running: bool = false) -> void:
+func change_2d_scene(scene_name: String, delete: bool = true, keep_running: bool = false, hide_gui: bool = true) -> void:
 	var game_path := GAME_SCENE_PATH + scene_name + ".tscn"
 	if not ResourceLoader.exists(game_path):
 		push_error("UI scene not found: " + game_path)
@@ -39,11 +39,15 @@ func change_2d_scene(scene_name: String, delete: bool = true, keep_running: bool
 			current_2d_scene.visible = false
 		else:
 			gui.remove_child(current_2d_scene)
+	if hide_gui and current_gui_scene != null:
+		current_gui_scene.queue_free()
+		current_gui_scene = null
 	var new = load(game_path).instantiate()
+	print("Instantiated scene:", new)
 	world_2d.add_child(new)
 	current_2d_scene = new
 
-func change_3d_scene(scene_name: String, delete: bool = true, keep_running: bool = false) -> void:
+func change_3d_scene(scene_name: String, delete: bool = true, keep_running: bool = false, hide_gui: bool = true) -> void:
 	var game_path := GAME_SCENE_PATH + scene_name + ".tscn"
 	if not ResourceLoader.exists(game_path):
 		push_error("UI scene not found: " + game_path)
@@ -59,12 +63,15 @@ func change_3d_scene(scene_name: String, delete: bool = true, keep_running: bool
 	world_3d.add_child(new)
 	current_3d_scene = new
 
+func clear_world_2d() -> void:
+	for child in world_2d.get_children():
+		child.queue_free()
+	current_2d_scene = null
+
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	Global.game_controller = self
 	current_gui_scene = $GUI/startScreen
-	
-
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
