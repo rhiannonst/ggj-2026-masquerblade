@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{235e369d-69c7-4c66-963a-7d35e4ac850c}">
+		<property name="assetPath">
+			<value>Music/Masquerblade - Vocals Verse + Chorus.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>94</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{8dadbd3e-a7c4-4631-8ec5-3ba81d80f0e8}</destination>
+		</relationship>
+	</object>
+</objects>
