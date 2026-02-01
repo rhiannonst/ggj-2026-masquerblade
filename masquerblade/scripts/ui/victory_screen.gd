@@ -9,8 +9,8 @@ func _ready() -> void:
 	
 	if MusicManager.music_instance:
 		MusicManager.music_instance.stop(FmodServer.FMOD_STUDIO_STOP_ALLOWFADEOUT)
-	
-	FmodServer.play_one_shot("event:/Music/stageClear")
+	if MusicManager.music_instance:
+		FmodServer.play_one_shot("event:/UI/stageClear")
 
 func _on_main_menu_pressed() -> void:
 	get_tree().paused = false
