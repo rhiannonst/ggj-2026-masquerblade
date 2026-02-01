@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{33abf2dd-1ae3-4ad8-8c9f-156107d85b1a}">
+		<property name="assetPath">
+			<value>Stage UI/Dancy mask miss arrow layer 2.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.5</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{8dadbd3e-a7c4-4631-8ec5-3ba81d80f0e8}</destination>
+		</relationship>
+	</object>
+</objects>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{7357ccb9-c08a-49b4-9536-b9fe196db241}">
+		<property name="assetPath">
+			<value>Stage UI/Hit arrows 2.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.875</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{8dadbd3e-a7c4-4631-8ec5-3ba81d80f0e8}</destination>
+		</relationship>
+	</object>
+</objects>
