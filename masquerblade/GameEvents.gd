@@ -13,4 +13,4 @@ signal battle_ended
 signal move_to_next_location # To tell DanceFloor to move the player
 
 # Progress Tracking
-var current_game_state : int = 2 # 0 = Fight 1, 1 = Fight 2, 2 = Boss
+var current_game_state : int = 0 # 0 = Fight 1, 1 = Fight 2, 2 = Boss
