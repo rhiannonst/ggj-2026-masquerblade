@@ -70,7 +70,6 @@ func clear_world_2d() -> void:
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	Global.game_controller = self
 	current_gui_scene = $GUI/startScreen
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
