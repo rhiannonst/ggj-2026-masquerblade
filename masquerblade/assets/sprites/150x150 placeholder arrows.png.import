@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b4y8ni7tf0rme"
-path="res://.godot/imported/Room_Placeholder.png-09384a26fddb549dd31827a000b19776.ctex"
+uid="uid://bd8voy2kk8pub"
+path="res://.godot/imported/150x150 placeholder arrows.png-3ea320c9b041812f0a417cdeaba8a314.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Room_Placeholder.png"
-dest_files=["res://.godot/imported/Room_Placeholder.png-09384a26fddb549dd31827a000b19776.ctex"]
+source_file="res://assets/sprites/150x150 placeholder arrows.png"
+dest_files=["res://.godot/imported/150x150 placeholder arrows.png-3ea320c9b041812f0a417cdeaba8a314.ctex"]
 
 [params]
 

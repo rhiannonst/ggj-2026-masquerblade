@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://5egujfrgey0"]
 
-[ext_resource type="Texture2D" uid="uid://dpdpf6urfuw0q" path="res://spritesheet1.png" id="1_kpjcp"]
-[ext_resource type="Texture2D" uid="uid://bfgg0wuycophf" path="res://Player_Placeholder.png" id="1_xhfnw"]
+[ext_resource type="Texture2D" uid="uid://dpdpf6urfuw0q" path="res://assets/sprites/spritesheet1.png" id="1_kpjcp"]
+[ext_resource type="Texture2D" uid="uid://bfgg0wuycophf" path="res://assets/sprites/Player_Placeholder.png" id="1_xhfnw"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_e80uo"]
 atlas = ExtResource("1_kpjcp")
@@ -209,4 +209,4 @@ shape = SubResource("CircleShape2D_kpjcp")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=373332629]
 position = Vector2(0, -166)
-zoom = Vector2(0.5, 0.5)
+zoom = Vector2(0.25, 0.25)

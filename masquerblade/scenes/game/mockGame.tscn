@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://ovq40heuiqgw"]
+
+[ext_resource type="PackedScene" uid="uid://cxiscaotq838n" path="res://scenes/ui/pauseScreen.tscn" id="1_53fgi"]
+
+[node name="mockGame" type="Node2D" unique_id=716143393]
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=955864679]
+offset_right = 640.0
+offset_bottom = 680.0
+color = Color(0.5647059, 0.654902, 1, 1)
+
+[node name="PauseScreen" parent="." unique_id=1710817815 instance=ExtResource("1_53fgi")]
