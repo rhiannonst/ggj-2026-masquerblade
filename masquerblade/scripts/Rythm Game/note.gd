@@ -1,7 +1,5 @@
-extends Node
-var game_controller : GameController
-signal measure()
-signal beat() 
+extends Area2D
+
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
