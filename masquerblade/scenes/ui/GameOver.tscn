@@ -1,0 +1,61 @@
+[gd_scene format=3 uid="uid://b8sw1uer7lmqg"]
+
+[ext_resource type="Script" uid="uid://dshiiob28oppi" path="res://scripts/ui/defeat_screen.gd" id="1_kp3qx"]
+
+[node name="GameOverScreen" type="Control" unique_id=1710817815]
+process_mode = 3
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_kp3qx")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=2040966990]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.83137256, 1, 1, 0.3137255)
+
+[node name="PanelContainer" type="PanelContainer" parent="." unique_id=895425072]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=382075578]
+custom_minimum_size = Vector2(161, 218)
+layout_mode = 1
+offset_left = 239.5
+offset_top = 231.0
+offset_right = 400.5
+offset_bottom = 449.0
+theme_override_constants/separation = 10
+
+[node name="retry" type="Button" parent="VBoxContainer" unique_id=1385302974]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 28
+text = "Retry"
+
+[node name="main menu" type="Button" parent="VBoxContainer" unique_id=869408163]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 28
+text = "Main Menu"
+
+[node name="quit" type="Button" parent="VBoxContainer" unique_id=1698340587]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 28
+text = "Quit"
+
+[connection signal="pressed" from="VBoxContainer/retry" to="." method="_on_retry_pressed"]
+[connection signal="pressed" from="VBoxContainer/main menu" to="." method="_on_main_menu_pressed"]
+[connection signal="pressed" from="VBoxContainer/quit" to="." method="_on_quit_pressed"]

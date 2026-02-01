@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="ParameterPreset" id="{f2ae4d50-76a2-445b-8add-6dc02b7e9e23}">
+		<property name="name">
+			<value>maskDamage</value>
+		</property>
+		<relationship name="folder">
+			<destination>{5a1e07db-64e3-4c66-b58a-1e295f3df8b5}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{565dac24-3359-4c82-8f58-bd5dba9e8a13}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{565dac24-3359-4c82-8f58-bd5dba9e8a13}">
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>

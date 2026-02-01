@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{926ec8c3-38b6-4fd5-bd48-c9f428f899b5}">
+		<property name="assetPath">
+			<value>Masquerblade - Success.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>3</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{8dadbd3e-a7c4-4631-8ec5-3ba81d80f0e8}</destination>
+		</relationship>
+	</object>
+</objects>
