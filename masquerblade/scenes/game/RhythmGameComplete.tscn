@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://gt3k86gfv8wh"]
 
-[ext_resource type="Script" uid="uid://6rqfbcp2p5fe" path="res://scripts/rhythm_game_complete.gd" id="1_nc34d"]
+[ext_resource type="Script" path="res://scripts/rhythm_game_complete.gd" id="1_nc34d"]
 [ext_resource type="Texture2D" uid="uid://dpdpf6urfuw0q" path="res://assets/sprites/spritesheet1.png" id="1_ppdf6"]
 [ext_resource type="Texture2D" uid="uid://dmffge5gxfl4k" path="res://assets/sprites/ui battle pink background.png" id="1_ydrio"]
 [ext_resource type="Script" uid="uid://e3try20daxec" path="res://scripts/dance_enemy.gd" id="2_wmshs"]
@@ -8,6 +8,7 @@
 [ext_resource type="Script" uid="uid://bu70rir2mn5mk" path="res://scripts/dance_player.gd" id="3_ydrio"]
 [ext_resource type="Script" uid="uid://x1ssjeeniekj" path="res://scripts/RhythmController.gd" id="4_nc34d"]
 [ext_resource type="PackedScene" uid="uid://bvp0vbnlw5s3s" path="res://scenes/Rythm Game/NoteSpawner.tscn" id="5_klh5i"]
+[ext_resource type="Script" uid="uid://b2b5ryrlej7s5" path="res://scripts/Rythm Game/note_button_spawner.gd" id="6_wmshs"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_tdnyv"]
 atlas = ExtResource("1_ppdf6")
@@ -306,6 +307,10 @@ script = ExtResource("4_nc34d")
 
 [node name="NoteSpawner" parent="RhythmController" unique_id=1329407926 instance=ExtResource("5_klh5i")]
 position = Vector2(43, 2)
+
+[node name="ButtonSpawner" type="Node2D" parent="RhythmController/NoteSpawner" unique_id=1408399696]
+position = Vector2(0, 607)
+script = ExtResource("6_wmshs")
 
 [node name="HitZone" type="Area2D" parent="RhythmController" unique_id=347323834]
 position = Vector2(0, 600)
