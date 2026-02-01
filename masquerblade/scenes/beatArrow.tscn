@@ -2,6 +2,8 @@
 
 [ext_resource type="Texture2D" uid="uid://b4y8ni7tf0rme" path="res://Room_Placeholder.png" id="1_kihy8"]
 
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_kihy8"]
+
 [node name="game" type="Node2D" unique_id=1360802660]
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1864330040]
@@ -16,6 +18,9 @@ scale = Vector2(0.8172805, 0.19594598)
 texture = ExtResource("1_kihy8")
 
 [node name="pointer" type="Sprite2D" parent="QTE_beatArrows" unique_id=1261637886]
+position = Vector2(-154.125, 48)
+scale = Vector2(20.25, 56.5)
+texture = SubResource("PlaceholderTexture2D_kihy8")
 
 [node name="start" type="Marker2D" parent="QTE_beatArrows/pointer" unique_id=2045512368]
 
