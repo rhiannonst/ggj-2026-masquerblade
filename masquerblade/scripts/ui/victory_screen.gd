@@ -9,9 +9,9 @@ func _ready() -> void:
 
 func _on_main_menu_pressed() -> void:
 	get_tree().paused = false
-	GameEvents.current_game_state = 0
 	GameEvents.request_world_2d_clear.emit()
 	GameEvents.request_ui_change.emit("startScreen", true)
+	GameEvents.current_game_state = 0
 
 func _on_quit_pressed() -> void:
 	get_tree().quit()
