@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.03.00">
 	<object class="AudioFile" id="{7b1a4d9f-7127-412a-a881-e798c6f9359d}">
 		<property name="assetPath">
-			<value>AB_DL2_Todd_Champ_70_Warm_Synth_Loop_Comeback_F#m.wav</value>
+			<value>Temp Assets/AB_DL2_Todd_Champ_70_Warm_Synth_Loop_Comeback_F#m.wav</value>
 		</property>
 		<property name="isStreaming">
 			<value>true</value>

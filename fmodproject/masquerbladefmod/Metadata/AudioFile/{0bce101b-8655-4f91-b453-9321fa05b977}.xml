@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.03.00">
 	<object class="AudioFile" id="{0bce101b-8655-4f91-b453-9321fa05b977}">
 		<property name="assetPath">
-			<value>AB_DL2_Toby_Schay_60_New_Age_LoFi_Loop_Alchemy_G#m.wav</value>
+			<value>Temp Assets/AB_DL2_Toby_Schay_60_New_Age_LoFi_Loop_Alchemy_G#m.wav</value>
 		</property>
 		<property name="isStreaming">
 			<value>true</value>
