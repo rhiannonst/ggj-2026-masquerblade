@@ -85,7 +85,7 @@ func _process(delta: float) -> void:
 
 func transition_and_change(scene_name: String, is_2d: bool):
 	var tween = create_tween()
-	
+	tween.set_pause_mode(Tween.TWEEN_PAUSE_PROCESS)
 	# 1. Fade to black
 	tween.tween_property(fade_overlay, "modulate:a", 1.0, 0.4).set_trans(Tween.TRANS_SINE)
 	await tween.finished
