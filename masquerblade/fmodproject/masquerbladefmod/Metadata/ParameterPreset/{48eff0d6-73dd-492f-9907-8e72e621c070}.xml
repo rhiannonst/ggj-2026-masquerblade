@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.03.00">
 	<object class="ParameterPreset" id="{48eff0d6-73dd-492f-9907-8e72e621c070}">
 		<property name="name">
-			<value>Parameter 1</value>
+			<value>MovementStatus</value>
 		</property>
 		<relationship name="folder">
 			<destination>{5a1e07db-64e3-4c66-b58a-1e295f3df8b5}</destination>
@@ -19,8 +19,8 @@
 			<value>2</value>
 		</property>
 		<property name="enumerationLabels">
-			<value>InTransition</value>
-			<value>Ready</value>
+			<value>moving</value>
+			<value>destination</value>
 		</property>
 		<property name="initialValue">
 			<value>0</value>

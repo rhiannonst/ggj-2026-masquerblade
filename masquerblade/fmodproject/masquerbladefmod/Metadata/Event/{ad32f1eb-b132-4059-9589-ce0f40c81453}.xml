@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.03.00">
 	<object class="Event" id="{ad32f1eb-b132-4059-9589-ce0f40c81453}">
 		<property name="name">
-			<value>StageClear</value>
+			<value>stageClear</value>
 		</property>
 		<property name="outputFormat">
 			<value>1</value>
