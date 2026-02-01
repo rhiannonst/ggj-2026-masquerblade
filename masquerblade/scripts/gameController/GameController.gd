@@ -71,6 +71,9 @@ func clear_world_2d() -> void:
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	#Global.game_controller = self
+	GameEvents.request_ui_change.connect(change_ui_scene)
+	GameEvents.request_2d_change.connect(change_2d_scene)
+	GameEvents.request_world_2d_clear.connect(clear_world_2d)
 	current_gui_scene = $GUI/startScreen
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

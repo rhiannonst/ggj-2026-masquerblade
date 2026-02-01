@@ -13,6 +13,7 @@ func _process(delta: float) -> void:
 func _on_start_pressed() -> void:
 	print("Start")
 	#Global.game_controller.change_2d_scene("DanceFloor")
+	GameEvents.request_2d_change.emit("DanceFloor", true)
 
 
 func _on_controls_pressed() -> void:
