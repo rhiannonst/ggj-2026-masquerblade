@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://b8sw1uer7lmqg"]
 
 [ext_resource type="Script" uid="uid://dshiiob28oppi" path="res://scripts/ui/defeat_screen.gd" id="1_kp3qx"]
+[ext_resource type="AudioStream" uid="uid://ro2gb48jwrhv" path="res://fmodproject/masquerbladefmod/Assets/Masquerblade - Failure.wav" id="2_57v1k"]
 
 [node name="GameOverScreen" type="Control" unique_id=1710817815]
 process_mode = 3
@@ -55,6 +56,10 @@ layout_mode = 2
 size_flags_vertical = 3
 theme_override_font_sizes/font_size = 28
 text = "Quit"
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=352071406]
+stream = ExtResource("2_57v1k")
+autoplay = true
 
 [connection signal="pressed" from="VBoxContainer/retry" to="." method="_on_retry_pressed"]
 [connection signal="pressed" from="VBoxContainer/main menu" to="." method="_on_main_menu_pressed"]

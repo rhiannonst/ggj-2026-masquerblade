@@ -27,7 +27,7 @@ func move_to_initial_target():
 
 func _on_reached_location_1():
 	print("Character arrived! Starting first dance...")
-	
+
 	# Load your minigame scene or toggle UI here
 	GameEvents.request_2d_change.emit("RhythmGameComplete", true)
 

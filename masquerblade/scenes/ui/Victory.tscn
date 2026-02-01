@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://c81nunx8a53kf"]
 
 [ext_resource type="Script" uid="uid://bi8mbk57yk303" path="res://scripts/ui/victory_screen.gd" id="1_dfxnh"]
+[ext_resource type="AudioStream" uid="uid://d2hxqyyn00us3" path="res://fmodproject/masquerbladefmod/Assets/Masquerblade - Success.wav" id="2_f5ei0"]
 
 [node name="VictoryScreen" type="Control" unique_id=1710817815]
 process_mode = 3
@@ -49,6 +50,10 @@ layout_mode = 2
 size_flags_vertical = 3
 theme_override_font_sizes/font_size = 28
 text = "Quit"
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1551727218]
+stream = ExtResource("2_f5ei0")
+autoplay = true
 
 [connection signal="pressed" from="VBoxContainer/main menu" to="." method="_on_main_menu_pressed"]
 [connection signal="pressed" from="VBoxContainer/quit" to="." method="_on_quit_pressed"]

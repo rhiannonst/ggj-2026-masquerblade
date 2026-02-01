@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://c03tn10cs83nj"]
+
+[ext_resource type="AudioStream" uid="uid://smqfclu5cws7" path="res://fmodproject/masquerbladefmod/Assets/Masquerblade - Full Song.wav" id="1_hux41"]
+[ext_resource type="Script" uid="uid://cyx6um5ivdw37" path="res://scripts/GlobalSong.gd" id="2_v6v0x"]
+
+[node name="AudioManager" type="Node2D" unique_id=1759417276]
+
+[node name="AudioManager" type="AudioStreamPlayer2D" parent="." unique_id=744978810]
+stream = ExtResource("1_hux41")
+script = ExtResource("2_v6v0x")

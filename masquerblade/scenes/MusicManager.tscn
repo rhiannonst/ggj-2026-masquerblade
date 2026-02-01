@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://bk4mf4tco0bqj"]
+
+[sub_resource type="GDScript" id="GDScript_icnqf"]
+script/source = "#
+"
+
+[node name="MusicManager" type="Node2D" unique_id=787566889]
+process_mode = 3
+script = SubResource("GDScript_icnqf")
