@@ -47,7 +47,7 @@ func _on_reached_location_2():
 	print("Character arrived! Starting second dance...")
 	
 	# Load your minigame scene or toggle UI here
-	GameEvents.request_2d_change.emit("RhythmGameComplete", true)
+	GameEvents.request_2d_change.emit("RhythmGameComplete2nd", true)
 
 func _second_dance_success():
 	GameEvents.game_state = 2
@@ -65,4 +65,4 @@ func _on_reached_location_3():
 	print("Character arrived! Starting boss dance...")
 	
 	# Load your minigame scene or toggle UI here
-	GameEvents.request_2d_change.emit("RhythmGameComplete", true)
+	GameEvents.request_2d_change.emit("RhythmGameCompleteBoss", true)
