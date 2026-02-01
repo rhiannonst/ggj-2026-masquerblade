@@ -8,9 +8,14 @@
 
 config_version=5
 
+[Fmod]
+
+General/banks_path="res://fmodproject/masquerbladefmod"
+
 [application]
 
 config/name="Masquerblade"
+run/main_scene="uid://bemkgw1fmbkwv"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
 
@@ -21,7 +26,7 @@ Global="*uid://c8i1qokx384ug"
 [display]
 
 window/size/viewport_width=640
-window/size/viewport_height=720
+window/size/viewport_height=680
 
 [physics]
 
