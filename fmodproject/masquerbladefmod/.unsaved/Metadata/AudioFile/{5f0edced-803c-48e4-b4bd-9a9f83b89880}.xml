@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{5f0edced-803c-48e4-b4bd-9a9f83b89880}">
+		<property name="assetPath">
+			<value>Temp Assets/ORBIT_Top_Loop_Hats_Critical_140.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>3.4285714285714284</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{8dadbd3e-a7c4-4631-8ec5-3ba81d80f0e8}</destination>
+		</relationship>
+	</object>
+</objects>
