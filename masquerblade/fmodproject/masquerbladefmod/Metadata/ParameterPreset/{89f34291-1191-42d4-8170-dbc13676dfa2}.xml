@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="ParameterPreset" id="{89f34291-1191-42d4-8170-dbc13676dfa2}">
+		<property name="name">
+			<value>enemyHealth</value>
+		</property>
+		<relationship name="folder">
+			<destination>{5a1e07db-64e3-4c66-b58a-1e295f3df8b5}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{c7a978e4-52be-4914-9364-d24fd98aeb98}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{c7a978e4-52be-4914-9364-d24fd98aeb98}">
+		<property name="maximum">
+			<value>20</value>
+		</property>
+		<property name="isGlobal">
+			<value>true</value>
+		</property>
+		<property name="isReadOnly">
+			<value>true</value>
+		</property>
+		<property name="initialValue">
+			<value>20</value>
+		</property>
+		<property name="isExposedRecursively">
+			<value>false</value>
+		</property>
+	</object>
+</objects>

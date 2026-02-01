@@ -10,7 +10,7 @@ config_version=5
 
 [Fmod]
 
-General/banks_path="res://fmodproject/masquerbladefmod"
+General/banks_path="res://fmodproject/masquerbladefmod/Build/Desktop"
 
 [application]
 
@@ -22,6 +22,7 @@ config/icon="res://icon.svg"
 [autoload]
 
 GameEvents="*uid://dqp8hqsos4riw"
+GlobalSong="*uid://cyx6um5ivdw37"
 
 [display]
 
@@ -30,14 +31,6 @@ window/size/viewport_height=720
 window/stretch/mode="canvas_items"
 window/stretch/aspect="expand"
 
-[editor_plugins]
-
-enabled=PackedStringArray("res://addons/fmod/plugin.cfg")
-
 [physics]
 
 3d/physics_engine="Jolt Physics"
-
-[rendering]
-
-rendering_device/driver.windows="d3d12"
