@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.03.00">
-	<object class="AudioFile" id="{fa23aecd-e3e3-40c1-872e-00209f208b50}">
+	<object class="AudioFile" id="{c75d007a-4c79-4a0d-9875-515fa76d0c52}">
 		<property name="assetPath">
-			<value>Stage UI/Hit arrows.wav</value>
+			<value>Menu UI/Hover over menu botton.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>48</value>
@@ -11,7 +11,7 @@
 			<value>2</value>
 		</property>
 		<property name="length">
-			<value>0.5</value>
+			<value>0.70904166666666668</value>
 		</property>
 		<relationship name="masterAssetFolder">
 			<destination>{8dadbd3e-a7c4-4631-8ec5-3ba81d80f0e8}</destination>
