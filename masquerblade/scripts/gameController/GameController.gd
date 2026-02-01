@@ -31,7 +31,7 @@ func change_2d_scene(scene_name: String, delete: bool = true, keep_running: bool
 	get_tree().paused = false
 	var game_path := GAME_SCENE_PATH + scene_name + ".tscn"
 	if not ResourceLoader.exists(game_path):
-		push_error("UI scene not found: " + game_path)
+		push_error("game scene not found: " + game_path)
 		return
 	if current_2d_scene != null:
 		if delete:

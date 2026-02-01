@@ -22,6 +22,6 @@ func _on_retry_pressed() -> void:
 	# 2. Re-trigger the current fight based on the saved index
 	# This sends the player back into the rhythm scene they just failed
 	var current_fight = GameEvents.current_game_state
-	var scene_to_load = "RhythmGameComplete" + str(current_fight + 1)
+	var scene_to_load = "RhythmGameComplete"
 	
 	GameEvents.request_2d_change.emit(scene_to_load, true)
