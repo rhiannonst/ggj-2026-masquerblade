@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.03.00">
 	<object class="AudioFile" id="{ed2fbb55-8790-40ab-afce-a2feeab3099b}">
 		<property name="assetPath">
-			<value>AB_DL2_Neill_Von_Tally_60_Drum_Loop_Polignano.wav</value>
+			<value>Temp Assets/AB_DL2_Neill_Von_Tally_60_Drum_Loop_Polignano.wav</value>
 		</property>
 		<property name="isStreaming">
 			<value>true</value>
