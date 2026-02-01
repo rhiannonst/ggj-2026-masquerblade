@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://bfjhjhb8aej7b"]
+
+[node name="BeatArrow" type="Node2D" unique_id=794096848]
+
+[node name="QTE_beatArrows" type="Node2D" parent="." unique_id=921031533]
+
+[node name="bkgrnd_fight" type="Sprite2D" parent="QTE_beatArrows" unique_id=71009815]
