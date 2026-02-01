@@ -1,8 +1,8 @@
 class_name GameController extends Node
-
+@onready var fade_overlay: ColorRect = $GUI/FadeOverlay
 @export var world_3d : Node3D
 @export var world_2d : Node2D
-@export var gui : Control
+@export var gui : CanvasLayer
 
 var current_3d_scene
 var current_2d_scene
@@ -73,11 +73,28 @@ func clear_world_2d() -> void:
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	#Global.game_controller = self
-	GameEvents.request_ui_change.connect(change_ui_scene)
-	GameEvents.request_2d_change.connect(change_2d_scene)
+	GameEvents.request_2d_change.connect(func(name, _del): transition_and_change(name, true))
+	GameEvents.request_ui_change.connect(func(name, _del): transition_and_change(name, false))
 	GameEvents.request_world_2d_clear.connect(clear_world_2d)
 	current_gui_scene = $GUI/startScreen
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	pass
+
+func transition_and_change(scene_name: String, is_2d: bool):
+	var tween = create_tween()
+	
+	# 1. Fade to black
+	tween.tween_property(fade_overlay, "modulate:a", 1.0, 0.4).set_trans(Tween.TRANS_SINE)
+	await tween.finished
+	
+	# 2. Perform the actual scene swap
+	if is_2d:
+		change_2d_scene(scene_name)
+	else:
+		change_ui_scene(scene_name)
+	
+	# 3. Fade back to transparent
+	var tween_back = create_tween()
+	tween_back.tween_property(fade_overlay, "modulate:a", 0.0, 0.4).set_trans(Tween.TRANS_SINE)

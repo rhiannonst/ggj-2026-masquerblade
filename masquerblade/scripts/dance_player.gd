@@ -8,7 +8,7 @@ func _ready() -> void:
 	play("idle") # Start idle animation
 
 func _on_player_hit(amount: int) -> void:
-	if GameEvents.current_fight_index >= 3: 
+	if GameEvents.current_game_state >= 3: 
 		return
 	health -= amount
 	print("Player took damage! Remaining: ", health)

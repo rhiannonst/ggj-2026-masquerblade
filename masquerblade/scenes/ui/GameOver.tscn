@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://b8sw1uer7lmqg"]
 
-[ext_resource type="Script" uid="uid://bq4cbxjtp7eln" path="res://scripts/ui/pause_screen.gd" id="1_kp3qx"]
+[ext_resource type="Script" uid="uid://dshiiob28oppi" path="res://scripts/ui/defeat_screen.gd" id="1_kp3qx"]
 
 [node name="GameOverScreen" type="Control" unique_id=1710817815]
 process_mode = 3
