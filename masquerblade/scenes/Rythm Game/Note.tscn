@@ -1,27 +1,30 @@
 [gd_scene format=3 uid="uid://cgbbcxbk6fnw8"]
 
 [ext_resource type="Script" uid="uid://dj7ynuf0gml75" path="res://scripts/Rythm Game/note.gd" id="1_0lujy"]
-[ext_resource type="Texture2D" uid="uid://dyfqrknya0dbd" path="res://assets/sprites/falling note 150x150 placeholder.png" id="2_he6nt"]
+[ext_resource type="Texture2D" uid="uid://bhlut2axntos5" path="res://assets/sprites/arrows bicolor.png" id="2_0lujy"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_qo47y"]
-atlas = ExtResource("2_he6nt")
+[sub_resource type="AtlasTexture" id="AtlasTexture_he6nt"]
+atlas = ExtResource("2_0lujy")
 region = Rect2(0, 0, 150, 150)
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_qo47y"]
+atlas = ExtResource("2_0lujy")
+region = Rect2(600, 0, 150, 150)
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_p4qk6"]
-atlas = ExtResource("2_he6nt")
-region = Rect2(150, 0, 150, 150)
+atlas = ExtResource("2_0lujy")
+region = Rect2(300, 0, 150, 150)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_6rnn4"]
-atlas = ExtResource("2_he6nt")
-region = Rect2(0, 150, 150, 150)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_fium1"]
-atlas = ExtResource("2_he6nt")
-region = Rect2(150, 150, 150, 150)
+atlas = ExtResource("2_0lujy")
+region = Rect2(900, 0, 150, 150)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_a8r6g"]
 animations = [{
 "frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_he6nt")
+}, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_qo47y")
 }, {
@@ -30,9 +33,6 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_6rnn4")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_fium1")
 }],
 "loop": true,
 "name": &"default",
@@ -46,8 +46,8 @@ script = ExtResource("1_0lujy")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=614796424]
 sprite_frames = SubResource("SpriteFrames_a8r6g")
-frame = 1
 frame_progress = 0.11904741
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=950727836]
+position = Vector2(0, 2)
 shape = SubResource("RectangleShape2D_7o7u8")
