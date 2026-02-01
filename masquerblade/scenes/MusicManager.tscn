@@ -1,7 +1,9 @@
-[gd_scene format=3 uid="uid://dk8eobvdp52og"]
+[gd_scene format=3 uid="uid://bk4mf4tco0bqj"]
 
-[ext_resource type="Script" uid="uid://bxt3ymvdqjm0m" path="res://music_manager.gd" id="1_k17rw"]
+[sub_resource type="GDScript" id="GDScript_icnqf"]
+script/source = "#
+"
 
 [node name="MusicManager" type="Node2D" unique_id=787566889]
 process_mode = 3
-script = ExtResource("1_k17rw")
+script = SubResource("GDScript_icnqf")

@@ -22,7 +22,7 @@ config/icon="res://icon.svg"
 [autoload]
 
 GameEvents="*uid://dqp8hqsos4riw"
-MusicManager="*uid://bxt3ymvdqjm0m"
+GlobalSong="*uid://cyx6um5ivdw37"
 
 [display]
 
@@ -30,10 +30,6 @@ window/size/viewport_width=640
 window/size/viewport_height=720
 window/stretch/mode="canvas_items"
 window/stretch/aspect="expand"
-
-[editor_plugins]
-
-enabled=PackedStringArray("res://addons/fmod/plugin.cfg")
 
 [physics]
 

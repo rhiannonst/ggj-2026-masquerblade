@@ -6,10 +6,7 @@ func _ready() -> void:
 	get_tree().paused = true 
 	# Make sure it's visible
 	visible = true
-	if MusicManager.music_instance:
-		MusicManager.music_instance.stop(FmodServer.FMOD_STUDIO_STOP_ALLOWFADEOUT)
-	if MusicManager.music_instance:
-		FmodServer.play_one_shot("event:/UI/stageFail")
+	#
 
 func _on_main_menu_pressed() -> void:
 	get_tree().paused = false
