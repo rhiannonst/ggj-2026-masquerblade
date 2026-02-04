@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://ch4ok2tlpfnkr"
+path="res://.godot/imported/AB_DL2_Todd_Champ_70_Warm_Synth_Loop_Comeback_F#m.wav-d912ae719cbe6068019b1b0f4c068d8f.sample"
+
+[deps]
+
+source_file="res://Music/Assets/Temp Assets/AB_DL2_Todd_Champ_70_Warm_Synth_Loop_Comeback_F#m.wav"
+dest_files=["res://.godot/imported/AB_DL2_Todd_Champ_70_Warm_Synth_Loop_Comeback_F#m.wav-d912ae719cbe6068019b1b0f4c068d8f.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

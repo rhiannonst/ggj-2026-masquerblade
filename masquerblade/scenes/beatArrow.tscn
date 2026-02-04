@@ -1,7 +1,8 @@
 [gd_scene format=3 uid="uid://bfjhjhb8aej7b"]
 
 [ext_resource type="Script" uid="uid://cd5421447oupy" path="res://scenes/qte_beat_arrows.gd" id="1_j7hl7"]
-[ext_resource type="Texture2D" uid="uid://b4y8ni7tf0rme" path="res://Room_Placeholder.png" id="1_kihy8"]
+[ext_resource type="Texture2D" path="res://Room_Placeholder.png" id="1_kihy8"]
+
 
 [sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_kihy8"]
 

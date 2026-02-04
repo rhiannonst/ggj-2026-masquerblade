@@ -1,15 +1,16 @@
 [gd_scene format=3 uid="uid://gt3k86gfv8wh"]
 
 [ext_resource type="Script" uid="uid://6rqfbcp2p5fe" path="res://scripts/rhythm_game_complete.gd" id="1_nc34d"]
-[ext_resource type="Texture2D" uid="uid://dmffge5gxfl4k" path="res://assets/sprites/ui battle pink background.png" id="1_ydrio"]
+[ext_resource type="Texture2D" uid="uid://dmffge5gxfl4k" path="res://Art/assets/sprites/ui battle pink background.png" id="1_ydrio"]
 [ext_resource type="Script" uid="uid://e3try20daxec" path="res://scripts/dance_enemy.gd" id="2_wmshs"]
-[ext_resource type="Texture2D" uid="uid://dtmfculoo1pcy" path="res://assets/sprites/SunglassSara_Idle.png" id="3_klh5i"]
-[ext_resource type="Texture2D" uid="uid://dpcy6ddye8ggv" path="res://assets/sprites/ui battle animation waves for pink background.png" id="3_kollf"]
-[ext_resource type="Texture2D" uid="uid://bxb6lej1icxg8" path="res://assets/sprites/player.png" id="3_wmshs"]
+[ext_resource type="Texture2D" uid="uid://dtmfculoo1pcy" path="res://Art/assets/sprites/SunglassSara_Idle.png" id="3_klh5i"]
+[ext_resource type="Texture2D" uid="uid://dpcy6ddye8ggv" path="res://Art/assets/sprites/ui battle animation waves for pink background.png" id="3_kollf"]
+[ext_resource type="Texture2D" uid="uid://bxb6lej1icxg8" path="res://Art/assets/sprites/player.png" id="3_wmshs"]
 [ext_resource type="Script" uid="uid://bu70rir2mn5mk" path="res://scripts/dance_player.gd" id="3_ydrio"]
 [ext_resource type="Script" uid="uid://x1ssjeeniekj" path="res://scripts/RhythmController.gd" id="4_nc34d"]
 [ext_resource type="PackedScene" uid="uid://bvp0vbnlw5s3s" path="res://scenes/Rythm Game/NoteSpawner.tscn" id="5_klh5i"]
 [ext_resource type="Script" uid="uid://b2b5ryrlej7s5" path="res://scripts/Rythm Game/note_button_spawner.gd" id="6_wmshs"]
+
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_bu5ch"]
 atlas = ExtResource("3_klh5i")

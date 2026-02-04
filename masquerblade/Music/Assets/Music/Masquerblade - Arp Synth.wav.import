@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dllil6getceo3"
+path="res://.godot/imported/Masquerblade - Arp Synth.wav-d48d9d21e92af44d599de8f8421226a9.sample"
+
+[deps]
+
+source_file="res://Music/Assets/Music/Masquerblade - Arp Synth.wav"
+dest_files=["res://.godot/imported/Masquerblade - Arp Synth.wav-d48d9d21e92af44d599de8f8421226a9.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

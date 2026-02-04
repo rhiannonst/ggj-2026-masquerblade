@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dt15m2g0dx4fn"
+path="res://.godot/imported/MIss arrow 3.wav-f726d986d1bab09bd6f25f241ea2907e.sample"
+
+[deps]
+
+source_file="res://Music/Assets/Stage UI/MIss arrow 3.wav"
+dest_files=["res://.godot/imported/MIss arrow 3.wav-f726d986d1bab09bd6f25f241ea2907e.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

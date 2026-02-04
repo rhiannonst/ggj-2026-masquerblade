@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://dshiiob28oppi" path="res://scripts/ui/defeat_screen.gd" id="1_kp3qx"]
 [ext_resource type="Texture2D" uid="uid://pvv15w6fylb1" path="res://Art/UI/final fail (Mission Failed).png" id="2_05upv"]
-[ext_resource type="AudioStream" uid="uid://ro2gb48jwrhv" path="res://fmodproject/masquerbladefmod/Assets/Masquerblade - Failure.wav" id="2_57v1k"]
+[ext_resource type="AudioStream" uid="uid://ro2gb48jwrhv" path="res://Music/Assets/Music/Masquerblade - Failure.wav" id="2_57v1k"]
 
 [node name="GameOverScreen" type="Control" unique_id=1710817815]
 process_mode = 3

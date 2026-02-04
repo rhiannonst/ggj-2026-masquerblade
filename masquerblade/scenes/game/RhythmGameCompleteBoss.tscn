@@ -1,16 +1,17 @@
 [gd_scene format=3 uid="uid://cgkq0f886ey2o"]
 
 [ext_resource type="Script" uid="uid://6rqfbcp2p5fe" path="res://scripts/rhythm_game_complete.gd" id="1_4j4d7"]
-[ext_resource type="Texture2D" uid="uid://bfk8uwv3mr2l5" path="res://assets/sprites/final boss background color.png" id="2_4j4d7"]
-[ext_resource type="Texture2D" uid="uid://dpdpf6urfuw0q" path="res://assets/sprites/spritesheet1.png" id="3_h4om5"]
+[ext_resource type="Texture2D" uid="uid://bfk8uwv3mr2l5" path="res://Art/assets/sprites/final boss background color.png" id="2_4j4d7"]
+[ext_resource type="Texture2D" uid="uid://dpdpf6urfuw0q" path="res://Art/assets/sprites/spritesheet1.png" id="3_h4om5"]
 [ext_resource type="Texture2D" uid="uid://cdtoa14p8wmjd" path="res://Art/UI/final boss crowd background.png" id="3_ky4fb"]
 [ext_resource type="Script" uid="uid://e3try20daxec" path="res://scripts/dance_enemy.gd" id="4_mydr2"]
-[ext_resource type="Texture2D" uid="uid://bxb6lej1icxg8" path="res://assets/sprites/player.png" id="5_cfkvn"]
+[ext_resource type="Texture2D" uid="uid://bxb6lej1icxg8" path="res://Art/assets/sprites/player.png" id="5_cfkvn"]
 [ext_resource type="Script" uid="uid://bu70rir2mn5mk" path="res://scripts/dance_player.gd" id="6_3wvbp"]
 [ext_resource type="Script" uid="uid://x1ssjeeniekj" path="res://scripts/RhythmController.gd" id="7_qkhk5"]
 [ext_resource type="PackedScene" uid="uid://bvp0vbnlw5s3s" path="res://scenes/Rythm Game/NoteSpawner.tscn" id="8_je142"]
 [ext_resource type="Script" uid="uid://b2b5ryrlej7s5" path="res://scripts/Rythm Game/note_button_spawner.gd" id="9_by246"]
 [ext_resource type="Texture2D" uid="uid://l2wmh5fkrm6e" path="res://Art/UI/final boss disco ball background.png" id="11_h4om5"]
+
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_tdnyv"]
 atlas = ExtResource("3_h4om5")

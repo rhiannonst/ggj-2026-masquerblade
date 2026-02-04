@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://buyyhaqcbpygh"
+path="res://.godot/imported/ORBIT_Top_Loop_Hats_Critical_140.wav-dee90a78049d990b2bd8464ed19d99a2.sample"
+
+[deps]
+
+source_file="res://Music/Assets/Temp Assets/ORBIT_Top_Loop_Hats_Critical_140.wav"
+dest_files=["res://.godot/imported/ORBIT_Top_Loop_Hats_Critical_140.wav-dee90a78049d990b2bd8464ed19d99a2.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

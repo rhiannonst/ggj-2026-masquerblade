@@ -1,11 +1,11 @@
 [gd_scene format=3 uid="uid://cuqype36giogg"]
 
-[ext_resource type="Texture2D" uid="uid://b4d7eq6qpq6ej" path="res://assets/sprites/final dance floor background.png" id="1_hbxgx"]
+[ext_resource type="Texture2D" uid="uid://b4d7eq6qpq6ej" path="res://Art/assets/sprites/final dance floor background.png" id="1_hbxgx"]
 [ext_resource type="PackedScene" uid="uid://5egujfrgey0" path="res://scenes/Player.tscn" id="2_sah0u"]
 [ext_resource type="Script" uid="uid://beb8dae4sh6bn" path="res://scripts/player.gd" id="3_hbxgx"]
-[ext_resource type="Texture2D" uid="uid://dtmfculoo1pcy" path="res://assets/sprites/SunglassSara_Idle.png" id="4_hbxgx"]
-[ext_resource type="Texture2D" uid="uid://bvoe0qhpn2fnn" path="res://assets/sprites/PeacockPamela_Idle.png" id="4_sah0u"]
-[ext_resource type="Texture2D" uid="uid://dpdpf6urfuw0q" path="res://assets/sprites/spritesheet1.png" id="6_hbxgx"]
+[ext_resource type="Texture2D" uid="uid://dtmfculoo1pcy" path="res://Art/assets/sprites/SunglassSara_Idle.png" id="4_hbxgx"]
+[ext_resource type="Texture2D" uid="uid://bvoe0qhpn2fnn" path="res://Art/assets/sprites/PeacockPamela_Idle.png" id="4_sah0u"]
+[ext_resource type="Texture2D" uid="uid://dpdpf6urfuw0q" path="res://Art/assets/sprites/spritesheet1.png" id="6_hbxgx"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_7atef"]
 atlas = ExtResource("4_hbxgx")

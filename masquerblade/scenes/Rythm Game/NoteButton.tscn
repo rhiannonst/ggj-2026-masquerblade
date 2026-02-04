@@ -1,7 +1,8 @@
 [gd_scene format=3 uid="uid://bvmlrwnmvxnoq"]
 
 [ext_resource type="Script" uid="uid://btprps43jsb60" path="res://scenes/Rythm Game/note_button.gd" id="1_wea8h"]
-[ext_resource type="Texture2D" uid="uid://bhlut2axntos5" path="res://assets/sprites/arrows bicolor.png" id="2_8xbfg"]
+[ext_resource type="Texture2D" uid="uid://bhlut2axntos5" path="res://Art/assets/sprites/arrows bicolor.png" id="2_8xbfg"]
+
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_dx7bo"]
 atlas = ExtResource("2_8xbfg")

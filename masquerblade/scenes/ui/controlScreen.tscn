@@ -1,7 +1,8 @@
 [gd_scene format=3 uid="uid://d36rboba6oq4h"]
 
 [ext_resource type="Script" uid="uid://xs3227oaq4wd" path="res://scripts/ui/control_screen.gd" id="1_68bic"]
-[ext_resource type="Texture2D" uid="uid://btn4ss8icu46" path="res://assets/sprites/titlescreen.png" id="2_mv0by"]
+[ext_resource type="Texture2D" uid="uid://btn4ss8icu46" path="res://Art/assets/sprites/titlescreen.png" id="2_mv0by"]
+
 
 [node name="ControlScreen" type="Control" unique_id=1076347]
 layout_mode = 3

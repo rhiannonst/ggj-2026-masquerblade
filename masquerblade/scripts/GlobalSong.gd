@@ -2,7 +2,7 @@ extends AudioStreamPlayer
 
 func _ready():
 	# Path to your song
-	var song_path = "res://fmodproject/masquerbladefmod/Assets/Masquerblade - Full Song.wav"
+	var song_path = "res://Music/Assets/Music/Masquerblade - Full Song.wav"
 	
 	# Load the song
 	var song_stream = load(song_path)

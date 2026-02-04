@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://ce55i66bmts2"]
 
 [ext_resource type="Script" uid="uid://bndhshrq2irvr" path="res://scripts/ui/start_screen.gd" id="1_kq4sj"]
-[ext_resource type="Texture2D" uid="uid://btn4ss8icu46" path="res://assets/sprites/titlescreen.png" id="2_rnux4"]
+[ext_resource type="Texture2D" uid="uid://btn4ss8icu46" path="res://Art/assets/sprites/titlescreen.png" id="2_rnux4"]
 
 [node name="startScreen" type="Control" unique_id=1047627570]
 layout_mode = 3

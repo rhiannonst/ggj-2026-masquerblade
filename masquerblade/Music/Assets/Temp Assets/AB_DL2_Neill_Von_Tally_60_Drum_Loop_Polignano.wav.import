@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dsr6a0qndqfkg"
+path="res://.godot/imported/AB_DL2_Neill_Von_Tally_60_Drum_Loop_Polignano.wav-238598ea279cf49a463eac7dd09ca2ad.sample"
+
+[deps]
+
+source_file="res://Music/Assets/Temp Assets/AB_DL2_Neill_Von_Tally_60_Drum_Loop_Polignano.wav"
+dest_files=["res://.godot/imported/AB_DL2_Neill_Von_Tally_60_Drum_Loop_Polignano.wav-238598ea279cf49a463eac7dd09ca2ad.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

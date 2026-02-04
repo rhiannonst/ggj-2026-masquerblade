@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cylgnxvaft0dn"
+path="res://.godot/imported/UI Button click.wav-f589cb206232ff7fd363f1e1a0288289.sample"
+
+[deps]
+
+source_file="res://Music/Assets/Menu UI/UI Button click.wav"
+dest_files=["res://.godot/imported/UI Button click.wav-f589cb206232ff7fd363f1e1a0288289.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2
