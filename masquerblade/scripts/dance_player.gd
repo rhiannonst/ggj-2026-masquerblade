@@ -5,7 +5,7 @@ var health = 3
 func _ready() -> void:
 	# Connect to the signal bus
 	GameEvents.player_damaged.connect(_on_player_hit)
-	play("idle") # Start idle animation
+	#play("idle") # Start idle animation
 
 func _on_player_hit(amount: int) -> void:
 	if GameEvents.current_game_state >= 3: 

@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://b8sw1uer7lmqg"]
 
 [ext_resource type="Script" uid="uid://dshiiob28oppi" path="res://scripts/ui/defeat_screen.gd" id="1_kp3qx"]
+[ext_resource type="Texture2D" uid="uid://pvv15w6fylb1" path="res://Art/UI/final fail (Mission Failed).png" id="2_05upv"]
 [ext_resource type="AudioStream" uid="uid://ro2gb48jwrhv" path="res://fmodproject/masquerbladefmod/Assets/Masquerblade - Failure.wav" id="2_57v1k"]
 
 [node name="GameOverScreen" type="Control" unique_id=1710817815]
@@ -20,7 +21,11 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-color = Color(0.83137256, 1, 1, 0.3137255)
+color = Color(0.9843137, 0.9490196, 0.96862745, 1)
+
+[node name="failpng" type="Sprite2D" parent="ColorRect" unique_id=531139025]
+position = Vector2(316, 339)
+texture = ExtResource("2_05upv")
 
 [node name="PanelContainer" type="PanelContainer" parent="." unique_id=895425072]
 layout_mode = 1
@@ -34,9 +39,9 @@ grow_vertical = 2
 custom_minimum_size = Vector2(161, 218)
 layout_mode = 1
 offset_left = 239.5
-offset_top = 231.0
+offset_top = 430.0
 offset_right = 400.5
-offset_bottom = 449.0
+offset_bottom = 648.0
 theme_override_constants/separation = 10
 
 [node name="retry" type="Button" parent="VBoxContainer" unique_id=1385302974]

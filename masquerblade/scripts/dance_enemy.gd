@@ -7,7 +7,7 @@ func _ready() -> void:
 	# Connect to the Signal Bus
 	print("ENEMY IS ACTIVE AND LISTENING")
 	GameEvents.enemy_damaged.connect(_on_damaged)
-	play("idle")
+	#play("idle")
 
 func _on_damaged(amount: int) -> void:
 	health -= amount

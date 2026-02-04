@@ -5,8 +5,8 @@ extends Node2D
 # Map your lanes to Godot Input Actions
 # Make sure "left", "down", etc., are defined in Project Settings > Input Map
 var lane_actions = {
-	0: "ui_up",
-	1: "ui_left",
+	0: "ui_left",
+	1: "ui_up",
 	2: "ui_right",
 	3: "ui_down"
 }
