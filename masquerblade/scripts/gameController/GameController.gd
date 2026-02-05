@@ -3,6 +3,7 @@ class_name GameController extends Node
 @export var world_3d : Node3D
 @export var world_2d : Node2D
 @export var gui : CanvasLayer
+@onready var fmod_event_emitter_2d: FmodEventEmitter2D = $FmodEventEmitter2D
 
 var current_3d_scene
 var current_2d_scene
@@ -77,6 +78,9 @@ func _ready() -> void:
 	GameEvents.request_2d_change.connect(func(name, _del): transition_and_change(name, true))
 	GameEvents.request_ui_change.connect(func(name, _del): transition_and_change(name, false))
 	GameEvents.request_world_2d_clear.connect(clear_world_2d)
+	GameEvents.stage_state_changed.connect(_on_stage_changed)
+	GameEvents.request_debug_print.connect(debug_music_parameter)
+	GameEvents.music_state_changed.connect(_on_music_state_changed)
 	current_gui_scene = $GUI/startScreen
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -99,3 +103,17 @@ func transition_and_change(scene_name: String, is_2d: bool):
 	# 3. Fade back to transparent
 	var tween_back = create_tween()
 	tween_back.tween_property(fade_overlay, "modulate:a", 0.0, 0.4).set_trans(Tween.TRANS_SINE)
+
+
+func _on_stage_changed(new_value: float):
+	fmod_event_emitter_2d.set_parameter("stageState", new_value)
+
+func debug_music_parameter():
+	# This gets the value currently applied to this specific emitter
+	var current_val = fmod_event_emitter_2d.get_parameter("stageState")
+	print("FMOD Debug: 'stageState' is currently at: ", current_val)
+
+func _on_music_state_changed(new_label: String):
+	# 'MovementStatus' must match your FMOD Studio parameter name exactly
+	fmod_event_emitter_2d.set_parameter("MovementStatus", new_label)
+	print("FMOD: MovementStatus set to ", new_label)

@@ -22,7 +22,15 @@ config/icon="res://icon.svg"
 [autoload]
 
 GameEvents="*uid://dqp8hqsos4riw"
-GlobalSong="*uid://cyx6um5ivdw37"
+FmodManager="*uid://cds10pm7hwn3p"
+
+[debug]
+
+gdscript/warnings/unused_variable=0
+gdscript/warnings/unused_parameter=0
+gdscript/warnings/unused_signal=0
+gdscript/warnings/shadowed_variable=0
+gdscript/warnings/shadowed_variable_base_class=0
 
 [display]
 
