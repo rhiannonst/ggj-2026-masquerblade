@@ -275,7 +275,7 @@ scale = Vector2(0.8, 0.8)
 script = ExtResource("3_hbxgx")
 
 [node name="EnemyLocation1" type="Node2D" parent="." unique_id=90284962]
-position = Vector2(-814, 398)
+position = Vector2(-784, 457)
 
 [node name="Enemy" type="AnimatedSprite2D" parent="." unique_id=1565945305]
 position = Vector2(-655, 211)
@@ -284,7 +284,7 @@ sprite_frames = SubResource("SpriteFrames_w0830")
 autoplay = "default"
 
 [node name="EnemyLocation2" type="Node2D" parent="." unique_id=769301874]
-position = Vector2(-276.81, 870)
+position = Vector2(-210, 1018)
 
 [node name="Enemy2" type="AnimatedSprite2D" parent="." unique_id=1917459518]
 position = Vector2(-39, 808)
@@ -293,7 +293,7 @@ sprite_frames = SubResource("SpriteFrames_fgiji")
 autoplay = "default"
 
 [node name="BossLocation" type="Node2D" parent="." unique_id=1602516384]
-position = Vector2(872.5, 6)
+position = Vector2(310, 561)
 
 [node name="Boss" type="AnimatedSprite2D" parent="." unique_id=1955254438]
 position = Vector2(516, 304)
