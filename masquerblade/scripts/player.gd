@@ -18,16 +18,16 @@ func _ready():
 			move_to_boss_target()
 
 func move_to_initial_target():
-	GameEvents.music_state_changed.emit("moving")
+	GameEvents.request_transitionjingle_start.emit()
 	var tween = create_tween()
-	# Interpolate global_position from current value to target over 1.0 seconds
-	tween.tween_property(self, "global_position", target_node_1.global_position, 1.0)\
+	# Interpolate global_position from current value to target over 5.0 seconds
+	tween.tween_property(self, "global_position", target_node_1.global_position, 5.0)\
 		.set_trans(Tween.TRANS_SINE)\
 		.set_ease(Tween.EASE_OUT)
 	tween.finished.connect(_on_reached_location_1)
 
 func _on_reached_location_1():
-	GameEvents.music_state_changed.emit("destination")
+	GameEvents.request_music_resume.emit()
 	print("Character arrived! Starting first dance...")
 	GameEvents.stage_state_changed.emit(1.0)
 	GameEvents.request_debug_print.emit()
@@ -40,16 +40,16 @@ func _first_dance_success():
 	move_to_secondary_target()
 	
 func move_to_secondary_target():
-	GameEvents.music_state_changed.emit("moving")
+	GameEvents.request_transitionjingle_start.emit()
 	var tween = create_tween()
-	# Interpolate global_position from current value to target over 1.0 seconds
-	tween.tween_property(self, "global_position", target_node_2.global_position, 1.0)\
+	# Interpolate global_position from current value to target over 10.0 seconds
+	tween.tween_property(self, "global_position", target_node_2.global_position, 5.0)\
 		.set_trans(Tween.TRANS_SINE)\
 		.set_ease(Tween.EASE_OUT)
 	tween.finished.connect(_on_reached_location_2)
 	
 func _on_reached_location_2():
-	GameEvents.music_state_changed.emit("destination")
+	GameEvents.request_music_resume.emit()
 	print("Character arrived! Starting second dance...")
 	GameEvents.stage_state_changed.emit(2.0)
 	GameEvents.request_debug_print.emit()
@@ -62,16 +62,16 @@ func _second_dance_success():
 	move_to_boss_target()
 	
 func move_to_boss_target():
-	GameEvents.music_state_changed.emit("moving")
+	GameEvents.request_transitionjingle_start.emit()
 	var tween = create_tween()
-	# Interpolate global_position from current value to target over 1.0 seconds
-	tween.tween_property(self, "global_position", target_node_3.global_position, 1.0)\
+	# Interpolate global_position from current value to target over 10.0 seconds
+	tween.tween_property(self, "global_position", target_node_3.global_position, 5.0)\
 		.set_trans(Tween.TRANS_SINE)\
 		.set_ease(Tween.EASE_OUT)
 	tween.finished.connect(_on_reached_location_3)
 	
 func _on_reached_location_3():
-	GameEvents.music_state_changed.emit("destination")
+	GameEvents.request_music_resume.emit()
 	print("Character arrived! Starting boss dance...")
 	GameEvents.stage_state_changed.emit(3.0)
 	GameEvents.request_debug_print.emit()

@@ -23,6 +23,7 @@ config/icon="res://icon.svg"
 
 GameEvents="*uid://dqp8hqsos4riw"
 FmodManager="*uid://cds10pm7hwn3p"
+AudioManager="*uid://c03tn10cs83nj"
 
 [debug]
 

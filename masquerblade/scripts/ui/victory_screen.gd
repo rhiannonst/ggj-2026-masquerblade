@@ -11,6 +11,7 @@ func _ready() -> void:
 
 func _on_main_menu_pressed() -> void:
 	get_tree().paused = false
+	GameEvents.stage_state_changed.emit(0.0)
 	GameEvents.request_world_2d_clear.emit()
 	GameEvents.request_ui_change.emit("startScreen", true)
 	GameEvents.current_game_state = 0

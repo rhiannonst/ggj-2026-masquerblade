@@ -26,23 +26,3 @@ grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
 color = Color(0, 0, 0, 1)
-
-[node name="FmodBankLoader" type="FmodBankLoader" parent="." unique_id=126843642]
-bank_paths = ["res://Build/Master.strings.bank", "res://Build/Master.bank", "res://Build/Menu.bank", "res://Build/Music.bank", "res://Build/Placeholder Bank.bank", "res://Build/UI.bank"]
-
-[node name="FmodListener2D" type="FmodListener2D" parent="." unique_id=1723925826]
-
-[node name="FmodEventEmitter2D" type="FmodEventEmitter2D" parent="." unique_id=974959923]
-event_name = "event:/MainTrack"
-event_guid = "{992d7086-ba3c-42be-ba77-2796d6247363}"
-autoplay = true
-fmod_parameters/maskDamage/id = 1662663827878200561
-fmod_parameters/maskDamage = 0.0
-fmod_parameters/maskDamage/variant_type = 3
-fmod_parameters/stageState/id = -8153533350063776017
-fmod_parameters/stageState = 0.0
-fmod_parameters/stageState/variant_type = 3
-fmod_parameters/MovementStatus/id = 226919250179016700
-fmod_parameters/MovementStatus = "moving"
-fmod_parameters/MovementStatus/labels = PackedStringArray("moving", "destination")
-fmod_parameters/MovementStatus/variant_type = 4

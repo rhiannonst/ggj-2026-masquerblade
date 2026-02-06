@@ -15,7 +15,8 @@ signal move_to_next_location # To tell DanceFloor to move the player
 #Music signals
 signal stage_state_changed(new_value: float)
 signal request_debug_print
-signal music_state_changed(new_label: String)
+signal request_transitionjingle_start
+signal request_music_resume
 
 # Progress Tracking
 var current_game_state : int = 0 # 0 = Fight 1, 1 = Fight 2, 2 = Boss
