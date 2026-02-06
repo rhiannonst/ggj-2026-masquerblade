@@ -59,7 +59,14 @@
 			<destination>{33fa5d1d-0782-47ae-92d4-e827743cf68e}</destination>
 		</relationship>
 	</object>
-	<object class="EventAutomatableProperties" id="{6eed9850-52ca-4769-9d17-8cfec715903e}" />
+	<object class="EventAutomatableProperties" id="{6eed9850-52ca-4769-9d17-8cfec715903e}">
+		<property name="maxVoices">
+			<value>4</value>
+		</property>
+		<property name="priority">
+			<value>4</value>
+		</property>
+	</object>
 	<object class="MarkerTrack" id="{95241241-0987-4884-a494-e551a003e03c}" />
 	<object class="Timeline" id="{c74acbb3-37a7-4523-99b3-82ac4061bd46}">
 		<property name="isProxyEnabled">
@@ -87,7 +94,7 @@
 	</object>
 	<object class="MultiSound" id="{56d4d094-27eb-486d-b1aa-6ad9206ef0b6}">
 		<relationship name="sounds">
-			<destination>{099c13c7-d309-496a-9a23-3a13d74b9e34}</destination>
+			<destination>{b73e2c07-c8a5-42e7-b541-7c29416d9b43}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusEffectChain" id="{a2d97c6d-914b-483d-8e36-cc23f7e93e71}">
@@ -102,12 +109,9 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{77d0bd0e-862b-40f8-a7da-f4844b64973f}" />
-	<object class="SingleSound" id="{099c13c7-d309-496a-9a23-3a13d74b9e34}">
-		<property name="volume">
-			<value>10</value>
-		</property>
+	<object class="SingleSound" id="{b73e2c07-c8a5-42e7-b541-7c29416d9b43}">
 		<relationship name="audioFile">
-			<destination>{f577e54a-4edd-4076-8042-66ba1b74def5}</destination>
+			<destination>{46e3b779-6879-40e9-a625-a5cb4e503059}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusFader" id="{2eea103b-182b-47e8-985e-10a7968d26e1}" />
