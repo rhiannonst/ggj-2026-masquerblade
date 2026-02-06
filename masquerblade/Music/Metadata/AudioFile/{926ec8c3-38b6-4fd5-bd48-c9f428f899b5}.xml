@@ -2,7 +2,10 @@
 <objects serializationModel="Studio.02.03.00">
 	<object class="AudioFile" id="{926ec8c3-38b6-4fd5-bd48-c9f428f899b5}">
 		<property name="assetPath">
-			<value>Masquerblade - Success.wav</value>
+			<value>Music/Masquerblade - Success.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>48</value>
