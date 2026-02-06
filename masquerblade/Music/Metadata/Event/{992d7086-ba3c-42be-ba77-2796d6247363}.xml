@@ -545,7 +545,7 @@
 			<destination>{806a06d5-1513-473a-bc37-6896808c7d5b}</destination>
 		</relationship>
 		<relationship name="output">
-			<destination>{d2f70419-5780-4135-adeb-9f716941b1f9}</destination>
+			<destination>{c1f1f743-265f-40e8-b679-c9afbf6165f2}</destination>
 		</relationship>
 	</object>
 	<object class="AutomationTrack" id="{a9407369-e3be-4780-8083-d8d604f4267c}">
@@ -596,7 +596,7 @@
 			<destination>{c4a51585-5c81-4c83-8b88-74b3c238585b}</destination>
 		</relationship>
 		<relationship name="output">
-			<destination>{5c93d9e4-7b26-4bb0-b5e2-879cd734a4a2}</destination>
+			<destination>{d2f70419-5780-4135-adeb-9f716941b1f9}</destination>
 		</relationship>
 	</object>
 	<object class="TransitionSourceSound" id="{7c8af967-639e-40c7-829e-0059376127fd}">
@@ -1047,6 +1047,9 @@
 		<relationship name="automators">
 			<destination>{316e1a0c-6167-46e5-bfb6-3918fffbed6d}</destination>
 		</relationship>
+		<relationship name="modulators">
+			<destination>{2a72f688-dc8e-433f-bb57-b636f530902c}</destination>
+		</relationship>
 		<relationship name="effectChain">
 			<destination>{4897c774-760f-4e5b-9fe9-c9d01e675eac}</destination>
 		</relationship>
@@ -1088,7 +1091,10 @@
 			<value>99.96902621722846</value>
 		</property>
 		<property name="length">
-			<value>10</value>
+			<value>9.8709737827715429</value>
+		</property>
+		<property name="timelockedOffset">
+			<value>0.12902621722845709</value>
 		</property>
 		<relationship name="audioFile">
 			<destination>{f165edee-36bc-42ce-b501-1771a8909790}</destination>
@@ -1358,6 +1364,14 @@
 			<destination>{aa10ee8f-a712-4b5d-b73e-701e30778e87}</destination>
 		</relationship>
 	</object>
+	<object class="SeekModulator" id="{2a72f688-dc8e-433f-bb57-b636f530902c}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>volume</value>
+		</property>
+		<property name="speedAscending">
+			<value>1.8000000715255737</value>
+		</property>
+	</object>
 	<object class="MixerBusEffectChain" id="{4897c774-760f-4e5b-9fe9-c9d01e675eac}">
 		<relationship name="effects">
 			<destination>{8aeedd71-5ddf-427a-97d6-04c8b996dac9}</destination>
@@ -1517,6 +1531,9 @@
 		<relationship name="automators">
 			<destination>{73a1260c-73da-4e84-97bd-108cbacf4bc5}</destination>
 		</relationship>
+		<relationship name="modulators">
+			<destination>{ccf20e53-9801-4190-b63b-ef7206e67922}</destination>
+		</relationship>
 	</object>
 	<object class="MixerBusFader" id="{331b8cbb-19fd-4da8-829d-c47a25179898}" />
 	<object class="AutomationCurve" id="{aa10ee8f-a712-4b5d-b73e-701e30778e87}">
@@ -1605,9 +1622,17 @@
 			<destination>{9f9576f6-5219-4f32-8928-93e17b8eb298}</destination>
 		</relationship>
 	</object>
+	<object class="SeekModulator" id="{ccf20e53-9801-4190-b63b-ef7206e67922}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>frequencyA</value>
+		</property>
+		<property name="speedAscending">
+			<value>1.6000000238418579</value>
+		</property>
+	</object>
 	<object class="AutomationPoint" id="{6e2d7b43-ef7f-42fa-9577-4c27716cb3c7}">
 		<property name="position">
-			<value>1</value>
+			<value>3</value>
 		</property>
 		<property name="value">
 			<value>-80</value>
@@ -1640,7 +1665,7 @@
 	</object>
 	<object class="AutomationPoint" id="{17ecafe8-98d8-41b5-84db-781114f900e5}">
 		<property name="position">
-			<value>1</value>
+			<value>3</value>
 		</property>
 		<property name="value">
 			<value>22000</value>
