@@ -1,7 +1,7 @@
 extends AnimatedSprite2D
 
 
-var health = 3
+var health = 20
 
 func _ready() -> void:
 	# Connect to the Signal Bus

@@ -10,7 +10,7 @@
 [ext_resource type="Script" uid="uid://x1ssjeeniekj" path="res://scripts/RhythmController.gd" id="4_nc34d"]
 [ext_resource type="PackedScene" uid="uid://bvp0vbnlw5s3s" path="res://scenes/Rythm Game/NoteSpawner.tscn" id="5_klh5i"]
 [ext_resource type="Script" uid="uid://b2b5ryrlej7s5" path="res://scripts/Rythm Game/note_button_spawner.gd" id="6_wmshs"]
-
+[ext_resource type="Script" uid="uid://bp0eiyee68c5h" path="res://scripts/ui/HealthManager.gd" id="11_5crni"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_bu5ch"]
 atlas = ExtResource("3_klh5i")
@@ -129,6 +129,18 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_gx64x"]
 size = Vector2(34.15033, 20)
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5crni"]
+bg_color = Color(0.18000486, 0.18000486, 0.18000486, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lt5hl"]
+bg_color = Color(0.7176471, 0.12156863, 0.21176471, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kgg31"]
+bg_color = Color(0.18039216, 0.18039216, 0.18039216, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_swfor"]
+bg_color = Color(0.827451, 0.56078434, 0.16862746, 1)
+
 [node name="RhythmGameComplete" type="Node2D" unique_id=717114121]
 script = ExtResource("1_nc34d")
 
@@ -180,3 +192,31 @@ debug_color = Color(0, 0.6, 0.69803923, 0.68235296)
 position = Vector2(355, 400)
 scale = Vector2(2, 2)
 zoom = Vector2(0.9, 0.9)
+
+[node name="HealthUI" type="CanvasLayer" parent="." unique_id=996249260]
+layer = 10
+script = ExtResource("11_5crni")
+
+[node name="PlayerHealthBar" type="ProgressBar" parent="HealthUI" unique_id=220907229]
+offset_left = 20.0
+offset_top = 50.0
+offset_right = 40.0
+offset_bottom = 250.0
+pivot_offset = Vector2(10, 100)
+theme_override_styles/background = SubResource("StyleBoxFlat_5crni")
+theme_override_styles/fill = SubResource("StyleBoxFlat_lt5hl")
+max_value = 3.0
+step = 1.0
+fill_mode = 3
+show_percentage = false
+
+[node name="EnemyHealthBar" type="ProgressBar" parent="HealthUI" unique_id=1437435526]
+offset_left = 600.0
+offset_top = 50.0
+offset_right = 620.0
+offset_bottom = 250.0
+theme_override_styles/background = SubResource("StyleBoxFlat_kgg31")
+theme_override_styles/fill = SubResource("StyleBoxFlat_swfor")
+max_value = 20.0
+step = 1.0
+fill_mode = 3
