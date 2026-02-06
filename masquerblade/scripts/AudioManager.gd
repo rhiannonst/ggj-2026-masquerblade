@@ -9,6 +9,8 @@ func _ready() -> void:
 	GameEvents.request_debug_print.connect(debug_music_parameter)
 	GameEvents.request_transitionjingle_start.connect(_on_transitionjingle_start)
 	GameEvents.request_music_resume.connect(_on_music_resume)
+	GameEvents.enemy_damaged.connect(_on_enemy_damaged)
+	GameEvents.player_damaged.connect(_on_player_damaged)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
@@ -33,3 +35,12 @@ func _on_music_resume():
 	audio_stream_player_2d.stop()
 	fmod_event_emitter_2d.set_paused(false)
 	print("Main music resumed.")
+
+func _on_enemy_damaged(_amount):
+	# Play the "Hit" SFX from your FMOD bank
+	# Use the path you find in the Fmod Explorer
+	FmodServer.play_one_shot("event:/Hit")
+
+func _on_player_damaged(_amount):
+	# Play the "Miss" SFX from your FMOD bank
+	FmodServer.play_one_shot("event:/Miss")
