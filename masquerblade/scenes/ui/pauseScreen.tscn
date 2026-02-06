@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://cxiscaotq838n"]
 
 [ext_resource type="Script" uid="uid://bq4cbxjtp7eln" path="res://scripts/ui/pause_screen.gd" id="1_tfymj"]
+[ext_resource type="Script" uid="uid://df2vt8tkt83ek" path="res://scripts/ui/ButtonAudioConnector.gd" id="2_owjci"]
 
 [node name="PauseScreen" type="Control" unique_id=1710817815]
 process_mode = 3
@@ -35,6 +36,7 @@ offset_top = 231.0
 offset_right = 400.5
 offset_bottom = 449.0
 theme_override_constants/separation = 10
+script = ExtResource("2_owjci")
 
 [node name="continue" type="Button" parent="VBoxContainer" unique_id=177825189]
 layout_mode = 2

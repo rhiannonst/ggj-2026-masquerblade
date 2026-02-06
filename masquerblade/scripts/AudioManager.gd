@@ -44,3 +44,11 @@ func _on_enemy_damaged(_amount):
 func _on_player_damaged(_amount):
 	# Play the "Miss" SFX from your FMOD bank
 	FmodServer.play_one_shot("event:/Miss")
+
+func play_ui_hover():
+	# Replace with your actual FMOD path
+	FmodServer.play_one_shot("event:/Hover")
+
+func play_ui_select():
+	# Replace with your actual FMOD path
+	FmodServer.play_one_shot("event:/select")

@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://xs3227oaq4wd" path="res://scripts/ui/control_screen.gd" id="1_68bic"]
 [ext_resource type="Texture2D" uid="uid://btn4ss8icu46" path="res://Art/assets/sprites/titlescreen.png" id="2_mv0by"]
-
+[ext_resource type="Script" uid="uid://df2vt8tkt83ek" path="res://scripts/ui/ButtonAudioConnector.gd" id="3_mv0by"]
 
 [node name="ControlScreen" type="Control" unique_id=1076347]
 layout_mode = 3
@@ -28,6 +28,7 @@ offset_bottom = 363.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/separation = 10
+script = ExtResource("3_mv0by")
 
 [node name="back" type="Button" parent="VBoxContainer" unique_id=1498110848]
 layout_mode = 2

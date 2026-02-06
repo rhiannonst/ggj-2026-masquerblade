@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://dshiiob28oppi" path="res://scripts/ui/defeat_screen.gd" id="1_kp3qx"]
 [ext_resource type="Texture2D" uid="uid://pvv15w6fylb1" path="res://Art/UI/final fail (Mission Failed).png" id="2_05upv"]
 [ext_resource type="AudioStream" uid="uid://ro2gb48jwrhv" path="res://Music/Assets/Music/Masquerblade - Failure.wav" id="2_57v1k"]
+[ext_resource type="Script" uid="uid://df2vt8tkt83ek" path="res://scripts/ui/ButtonAudioConnector.gd" id="3_pxa5g"]
 
 [node name="GameOverScreen" type="Control" unique_id=1710817815]
 process_mode = 3
@@ -43,6 +44,7 @@ offset_top = 430.0
 offset_right = 400.5
 offset_bottom = 648.0
 theme_override_constants/separation = 10
+script = ExtResource("3_pxa5g")
 
 [node name="retry" type="Button" parent="VBoxContainer" unique_id=1385302974]
 layout_mode = 2

@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://bi8mbk57yk303" path="res://scripts/ui/victory_screen.gd" id="1_dfxnh"]
 [ext_resource type="AudioStream" uid="uid://d2hxqyyn00us3" path="res://Music/Assets/Music/Masquerblade - Success.wav" id="2_f5ei0"]
 [ext_resource type="Texture2D" uid="uid://dtwsy7i2txcti" path="res://Art/UI/final success (Killer Moves) screen.png" id="2_jbjlj"]
+[ext_resource type="Script" uid="uid://df2vt8tkt83ek" path="res://scripts/ui/ButtonAudioConnector.gd" id="3_ey1wf"]
 [ext_resource type="Texture2D" uid="uid://c3methtgjhi21" path="res://Art/assets/sprites/winDance1.png" id="4_345sd"]
 [ext_resource type="Texture2D" uid="uid://cy65ofrnimaxd" path="res://Art/assets/sprites/winDance2_cl.png" id="5_ey1wf"]
 
@@ -221,6 +222,7 @@ offset_top = 428.0
 offset_right = 400.5
 offset_bottom = 646.0
 theme_override_constants/separation = 10
+script = ExtResource("3_ey1wf")
 
 [node name="main menu" type="Button" parent="VBoxContainer" unique_id=869408163]
 layout_mode = 2

@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://bndhshrq2irvr" path="res://scripts/ui/start_screen.gd" id="1_kq4sj"]
 [ext_resource type="Texture2D" uid="uid://btn4ss8icu46" path="res://Art/assets/sprites/titlescreen.png" id="2_rnux4"]
+[ext_resource type="Script" uid="uid://df2vt8tkt83ek" path="res://scripts/ui/ButtonAudioConnector.gd" id="3_e56pr"]
 
 [node name="startScreen" type="Control" unique_id=1047627570]
 layout_mode = 3
@@ -27,6 +28,7 @@ offset_bottom = 471.0
 rotation = -0.06357172
 scale = Vector2(0.6822628, 0.6822628)
 theme_override_constants/separation = 10
+script = ExtResource("3_e56pr")
 
 [node name="start" type="Button" parent="VBoxContainer" unique_id=762560588]
 layout_mode = 2
